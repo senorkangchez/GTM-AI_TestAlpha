@@ -1,0 +1,766 @@
+[
+  {
+    "envelope_id": "env_bcbbd8bde7",
+    "source": "gong_call",
+    "account_id": "acc_globex",
+    "account_name": "Globex",
+    "opp_id": "opp_99dda3c3",
+    "timestamp": "2026-06-05T10:24:00",
+    "raw_text": "[00:00] Jamie Bridges (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Curtis Brown (VP of Support, Globex): Busy, but good. Happy to dig in.\n[01:20] Curtis Brown: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Curtis Brown: If we could deflect a third of tickets to self-service, my CFO's model puts that at about 2 million annually in headcount we wouldn't have to add. That's the number I'd be measured on.\n[05:33] Curtis Brown: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Jamie Bridges (Rep): Internal note - Curtis Brown is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Jamie Bridges (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jamie Bridges",
+      "Curtis Brown (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 11,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_93e96a65e5",
+    "source": "gong_call",
+    "account_id": "acc_hooli",
+    "account_name": "Hooli",
+    "opp_id": "opp_f45e8967",
+    "timestamp": "2026-06-07T10:14:00",
+    "raw_text": "[00:00] Brian Adams (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:12] Veronica Clark (VP of Support, Hooli): Good - actually a lot of momentum this week, the team is excited about this.\n[05:33] Veronica Clark: We are also evaluating Intercom, just so you know the landscape.\n[07:02] Brian Adams (Rep): Internal note - Veronica Clark is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Brian Adams (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Brian Adams",
+      "Veronica Clark (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 12,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_0f95082dc3",
+    "source": "gong_call",
+    "account_id": "acc_soylent",
+    "account_name": "Soylent Corp",
+    "opp_id": "opp_5e428e86",
+    "timestamp": "2026-06-07T10:35:00",
+    "raw_text": "[00:00] Mrs. Nicole Powell MD (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:12] Christian Smith (Director of Customer Experience, Soylent Corp): Good - actually a lot of momentum this week, the team is excited about this.\n[01:20] Christian Smith: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[07:02] Mrs. Nicole Powell MD (Rep): Internal note - Christian Smith is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Mrs. Nicole Powell MD (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Christian Smith (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "call_duration_min": 29,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_faac6b2127",
+    "source": "gong_call",
+    "account_id": "acc_vandelay",
+    "account_name": "Vandelay Industries",
+    "opp_id": "opp_e713afd6",
+    "timestamp": "2026-06-08T10:39:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Stephanie Sims (VP of Support, Vandelay Industries): Busy, but good. Happy to dig in.\n[01:20] Stephanie Sims: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[03:05] Stephanie Sims: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Stephanie Sims: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Cameron Ellison (Rep): Internal note - Stephanie Sims is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Stephanie Sims (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 31,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_f2ecd0ea24",
+    "source": "gong_call",
+    "account_id": "acc_cyberdyne",
+    "account_name": "Cyberdyne Systems",
+    "opp_id": "opp_acf589ca",
+    "timestamp": "2026-06-09T10:59:00",
+    "raw_text": "[00:00] Robert Nelson (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] April Hicks (VP of Support, Cyberdyne Systems): Busy, but good. Happy to dig in.\n[01:20] April Hicks: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[05:33] April Hicks: We are also evaluating Zoho, just so you know the landscape.\n[07:02] Robert Nelson (Rep): Internal note - April Hicks is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Robert Nelson (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Robert Nelson",
+      "April Hicks (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 12,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_3b4be58c13",
+    "source": "gong_call",
+    "account_id": "acc_globex",
+    "account_name": "Globex",
+    "opp_id": "opp_99dda3c3",
+    "timestamp": "2026-06-11T10:03:00",
+    "raw_text": "[00:00] Jamie Bridges (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Curtis Brown (VP of Support, Globex): Busy, but good. Happy to dig in.\n[01:20] Curtis Brown: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Curtis Brown: If we could deflect a third of tickets to self-service, my CFO's model puts that at about 2 million annually in headcount we wouldn't have to add. That's the number I'd be measured on.\n[05:33] Curtis Brown: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Jamie Bridges (Rep): Internal note - Curtis Brown is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Jamie Bridges (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jamie Bridges",
+      "Curtis Brown (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 16,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_f393804bf7",
+    "source": "gong_call",
+    "account_id": "acc_cyberdyne",
+    "account_name": "Cyberdyne Systems",
+    "opp_id": "opp_acf589ca",
+    "timestamp": "2026-06-12T10:02:00",
+    "raw_text": "[00:00] Robert Nelson (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] April Hicks (VP of Support, Cyberdyne Systems): Busy, but good. Happy to dig in.\n[01:20] April Hicks: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[05:33] April Hicks: We are also evaluating Zoho, just so you know the landscape.\n[07:02] Robert Nelson (Rep): Internal note - April Hicks is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Robert Nelson (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Robert Nelson",
+      "April Hicks (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 27,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_8021058e9b",
+    "source": "gong_call",
+    "account_id": "acc_stark",
+    "account_name": "Stark Industries",
+    "opp_id": "opp_7666a427",
+    "timestamp": "2026-06-13T10:59:00",
+    "raw_text": "[00:00] Mrs. Nicole Powell MD (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:12] Warren Aguirre (VP of Support, Stark Industries): Good - actually a lot of momentum this week, the team is excited about this.\n[01:20] Warren Aguirre: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Warren Aguirre: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Warren Aguirre: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Mrs. Nicole Powell MD (Rep): Internal note - Warren Aguirre is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Mrs. Nicole Powell MD (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Warren Aguirre (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 18,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_5c6882be4a",
+    "source": "gong_call",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-06-14T10:21:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Julia Brewer (VP of Support, Northwind Systems): Busy, but good. Happy to dig in.\n[01:20] Julia Brewer: The core issue hasn't changed - our support tickets are scattered across three different tools and nothing talks to each other. It's the thing keeping me up at night.\n[03:05] Julia Brewer: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Julia Brewer: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Cameron Ellison (Rep): Internal note - Julia Brewer is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Julia Brewer (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 22,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_1f058907d1",
+    "source": "gong_call",
+    "account_id": "acc_vandelay",
+    "account_name": "Vandelay Industries",
+    "opp_id": "opp_e713afd6",
+    "timestamp": "2026-06-15T10:08:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Stephanie Sims (VP of Support, Vandelay Industries): Busy, but good. Happy to dig in.\n[01:20] Stephanie Sims: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[03:05] Stephanie Sims: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Stephanie Sims: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Cameron Ellison (Rep): Internal note - Stephanie Sims is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Stephanie Sims (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 30,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_534b944d11",
+    "source": "gong_call",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-06-16T10:46:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:14] Julia Brewer (VP of Support, Northwind Systems): Honestly a bit slammed. I'll be straight with you, things have gotten quieter internally on this.\n[01:20] Julia Brewer: The core issue hasn't changed - our support tickets are scattered across three different tools and nothing talks to each other. It's the thing keeping me up at night.\n[03:05] Julia Brewer: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:40] Julia Brewer: I'll be honest, Zendesk has been pushing hard. A few folks on my team are leaning their way, so we're taking a serious look at Zendesk.\n[07:10] Cameron Ellison (Rep): Internal note - Julia Brewer has been our champion but is noticeably less responsive this call; may be losing air cover.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Julia Brewer (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 12,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_9e93e065cd",
+    "source": "gong_call",
+    "account_id": "acc_soylent",
+    "account_name": "Soylent Corp",
+    "opp_id": "opp_5e428e86",
+    "timestamp": "2026-06-18T10:06:00",
+    "raw_text": "[00:00] Mrs. Nicole Powell MD (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:12] Christian Smith (Director of Customer Experience, Soylent Corp): Good - actually a lot of momentum this week, the team is excited about this.\n[01:20] Christian Smith: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[07:02] Mrs. Nicole Powell MD (Rep): Internal note - Christian Smith is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Mrs. Nicole Powell MD (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Christian Smith (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "call_duration_min": 15,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_b9684ad29e",
+    "source": "gong_call",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-06-18T10:46:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:14] Julia Brewer (VP of Support, Northwind Systems): Honestly a bit slammed. I'll be straight with you, things have gotten quieter internally on this.\n[01:20] Julia Brewer: The core issue hasn't changed - our support tickets are scattered across three different tools and nothing talks to each other. It's the thing keeping me up at night.\n[03:05] Julia Brewer: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:40] Julia Brewer: I'll be honest, Zendesk has been pushing hard. A few folks on my team are leaning their way, so we're taking a serious look at Zendesk.\n[07:10] Cameron Ellison (Rep): Internal note - Julia Brewer has been our champion but is noticeably less responsive this call; may be losing air cover.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Julia Brewer (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 32,
+      "call_index": 2
+    }
+  },
+  {
+    "envelope_id": "env_a09e9a26c7",
+    "source": "gong_call",
+    "account_id": "acc_initech",
+    "account_name": "Initech",
+    "opp_id": "opp_ad4437aa",
+    "timestamp": "2026-06-18T10:59:00",
+    "raw_text": "[00:00] Robert Nelson (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Amy Tran (Support Operations Manager, Initech): Busy, but good. Happy to dig in.\n[01:20] Amy Tran: The core issue hasn't changed - agents waste the first two minutes of every call just figuring out who they're talking to. It's the thing keeping me up at night.\n[05:33] Amy Tran: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Robert Nelson (Rep): Internal note - Amy Tran is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Robert Nelson (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Robert Nelson",
+      "Amy Tran (Support Operations Manager)"
+    ],
+    "metadata": {
+      "call_duration_min": 30,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_65d74c9e82",
+    "source": "gong_email",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-06-19T10:11:00",
+    "raw_text": "Subject: RE: Northwind Systems <> next steps\n\nFrom: Cameron Ellison\nTo: Julia Brewer (VP of Support, Northwind Systems)\n\nHi Julia,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned native integrations, reporting depth, and ease of admin as the things that matter most. Still accurate?\n\nBest,\nCameron Ellison\n\n---\n\nFrom: Julia Brewer\nTo: Cameron Ellison\n\nHi Cameron,\n\nAnd yes on requirements - SOC 2 and data residency and reporting depth are the deciders.\n\nThanks, Julia",
+    "participants": [
+      "Cameron Ellison",
+      "Julia Brewer (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Northwind Systems <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_1ae53b30c5",
+    "source": "gong_call",
+    "account_id": "acc_pied",
+    "account_name": "Pied Piper",
+    "opp_id": "opp_cbce8ff5",
+    "timestamp": "2026-06-19T10:56:00",
+    "raw_text": "[00:00] Jamie Bridges (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Walter Hunter (VP of Customer Success, Pied Piper): Busy, but good. Happy to dig in.\n[01:20] Walter Hunter: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Walter Hunter: If we could deflect a third of tickets to self-service, my CFO's model puts that at about 2 million annually in headcount we wouldn't have to add. That's the number I'd be measured on.\n[05:33] Walter Hunter: We are also evaluating HubSpot, just so you know the landscape.\n[07:02] Jamie Bridges (Rep): Internal note - Walter Hunter is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Jamie Bridges (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jamie Bridges",
+      "Walter Hunter (VP of Customer Success)"
+    ],
+    "metadata": {
+      "call_duration_min": 32,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_06ae77ea37",
+    "source": "gong_call",
+    "account_id": "acc_umbrella",
+    "account_name": "Umbrella Logistics",
+    "opp_id": "opp_3b900e47",
+    "timestamp": "2026-06-20T10:25:00",
+    "raw_text": "[00:00] Jonathan Perez (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Justin Herman (Support Operations Manager, Umbrella Logistics): Busy, but good. Happy to dig in.\n[01:20] Justin Herman: The core issue hasn't changed - our support tickets are scattered across three different tools and nothing talks to each other. It's the thing keeping me up at night.\n[03:05] Justin Herman: If we could deflect a third of tickets to self-service, my CFO's model puts that at about 2 million annually in headcount we wouldn't have to add. That's the number I'd be measured on.\n[05:33] Justin Herman: We are also evaluating HubSpot, just so you know the landscape.\n[07:02] Jonathan Perez (Rep): Internal note - Justin Herman is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Jonathan Perez (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jonathan Perez",
+      "Justin Herman (Support Operations Manager)"
+    ],
+    "metadata": {
+      "call_duration_min": 33,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_b0235594b6",
+    "source": "gong_email",
+    "account_id": "acc_umbrella",
+    "account_name": "Umbrella Logistics",
+    "opp_id": "opp_3b900e47",
+    "timestamp": "2026-06-21T10:43:00",
+    "raw_text": "Subject: RE: Umbrella Logistics <> next steps\n\nFrom: Jonathan Perez\nTo: Justin Herman (Support Operations Manager, Umbrella Logistics)\n\nHi Justin,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned reporting depth, scalability during peak season, and SOC 2 and data residency as the things that matter most. Still accurate?\n\nBest,\nJonathan Perez\n\n---\n\nFrom: Justin Herman\nTo: Jonathan Perez\n\nHi Jonathan,\n\nAnd yes on requirements - ease of admin and reporting depth are the deciders.\n\nThanks, Justin",
+    "participants": [
+      "Jonathan Perez",
+      "Justin Herman (Support Operations Manager)"
+    ],
+    "metadata": {
+      "subject": "RE: Umbrella Logistics <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_8710e11d2d",
+    "source": "gong_call",
+    "account_id": "acc_wayne",
+    "account_name": "Wayne Enterprises",
+    "opp_id": "opp_7ce6a9fe",
+    "timestamp": "2026-06-22T10:10:00",
+    "raw_text": "[00:00] Brian Adams (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Alison Raymond (Director of Customer Experience, Wayne Enterprises): Busy, but good. Happy to dig in.\n[03:05] Alison Raymond: If we could cut average handle time by even 20 percent, my CFO's model puts that at around 1.4 million dollars a year in agent capacity. That's the number I'd be measured on.\n[05:33] Alison Raymond: We are also evaluating Zendesk, just so you know the landscape.\n[09:30] Brian Adams (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Brian Adams",
+      "Alison Raymond (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "call_duration_min": 15,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_9ae2944682",
+    "source": "gong_call",
+    "account_id": "acc_stark",
+    "account_name": "Stark Industries",
+    "opp_id": "opp_7666a427",
+    "timestamp": "2026-06-22T10:24:00",
+    "raw_text": "[00:00] Mrs. Nicole Powell MD (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:12] Warren Aguirre (VP of Support, Stark Industries): Good - actually a lot of momentum this week, the team is excited about this.\n[01:20] Warren Aguirre: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Warren Aguirre: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Warren Aguirre: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Mrs. Nicole Powell MD (Rep): Internal note - Warren Aguirre is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Mrs. Nicole Powell MD (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Warren Aguirre (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 29,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_d598c603b1",
+    "source": "gong_call",
+    "account_id": "acc_vandelay",
+    "account_name": "Vandelay Industries",
+    "opp_id": "opp_e713afd6",
+    "timestamp": "2026-06-23T10:02:00",
+    "raw_text": "[00:00] Cameron Ellison (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Stephanie Sims (VP of Support, Vandelay Industries): Busy, but good. Happy to dig in.\n[01:20] Stephanie Sims: The core issue hasn't changed - we have no real visibility into first-response time by team. It's the thing keeping me up at night.\n[03:05] Stephanie Sims: If we could get first-response time under an hour, my CFO's model puts that at close to 800 thousand a year in retained accounts. That's the number I'd be measured on.\n[05:33] Stephanie Sims: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Cameron Ellison (Rep): Internal note - Stephanie Sims is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Cameron Ellison (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Cameron Ellison",
+      "Stephanie Sims (VP of Support)"
+    ],
+    "metadata": {
+      "call_duration_min": 15,
+      "call_index": 2
+    }
+  },
+  {
+    "envelope_id": "env_421123953e",
+    "source": "gong_call",
+    "account_id": "acc_wayne",
+    "account_name": "Wayne Enterprises",
+    "opp_id": "opp_7ce6a9fe",
+    "timestamp": "2026-06-25T10:20:00",
+    "raw_text": "[00:00] Brian Adams (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Alison Raymond (Director of Customer Experience, Wayne Enterprises): Busy, but good. Happy to dig in.\n[03:05] Alison Raymond: If we could cut average handle time by even 20 percent, my CFO's model puts that at around 1.4 million dollars a year in agent capacity. That's the number I'd be measured on.\n[05:33] Alison Raymond: We are also evaluating Zendesk, just so you know the landscape.\n[09:30] Brian Adams (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Brian Adams",
+      "Alison Raymond (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "call_duration_min": 32,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_459df250e2",
+    "source": "gong_email",
+    "account_id": "acc_stark",
+    "account_name": "Stark Industries",
+    "opp_id": "opp_7666a427",
+    "timestamp": "2026-06-26T10:51:00",
+    "raw_text": "Subject: RE: Stark Industries <> next steps\n\nFrom: Mrs. Nicole Powell MD\nTo: Warren Aguirre (VP of Support, Stark Industries)\n\nHi Warren,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned SOC 2 and data residency, scalability during peak season, and native integrations as the things that matter most. Still accurate?\n\nBest,\nMrs. Nicole Powell MD\n\n---\n\nFrom: Warren Aguirre\nTo: Mrs. Nicole Powell MD\n\nHi Mrs.,\n\nOn sign-off: ultimately this needs Timothy Gross, our CFO, to approve the spend - she holds the budget for anything over 100k, so I'll need to bring her in.\nProcess-wise: my team runs the eval, then it goes to a security review, then finance for final approval.\nHeads up that procurement requires a full legal review and our MSA redlines usually take about three weeks, so we should start that early.\nAnd yes on requirements - ease of admin and total cost of ownership are the deciders.\n\nThanks, Warren",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Warren Aguirre (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Stark Industries <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_13468c6205",
+    "source": "gong_email",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-06-27T10:53:00",
+    "raw_text": "Subject: RE: Northwind Systems <> next steps\n\nFrom: Cameron Ellison\nTo: Julia Brewer (VP of Support, Northwind Systems)\n\nHi Julia,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned SOC 2 and data residency, ease of admin, and total cost of ownership as the things that matter most. Still accurate?\n\nBest,\nCameron Ellison\n\n---\n\nFrom: Julia Brewer\nTo: Cameron Ellison\n\nHi Cameron, thanks - swamped this week, will circle back. Julia",
+    "participants": [
+      "Cameron Ellison",
+      "Julia Brewer (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Northwind Systems <> next steps",
+      "quiet_reply": true
+    }
+  },
+  {
+    "envelope_id": "env_9ef249b388",
+    "source": "gong_call",
+    "account_id": "acc_wayne",
+    "account_name": "Wayne Enterprises",
+    "opp_id": "opp_7ce6a9fe",
+    "timestamp": "2026-06-27T10:59:00",
+    "raw_text": "[00:00] Brian Adams (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Alison Raymond (Director of Customer Experience, Wayne Enterprises): Busy, but good. Happy to dig in.\n[03:05] Alison Raymond: If we could cut average handle time by even 20 percent, my CFO's model puts that at around 1.4 million dollars a year in agent capacity. That's the number I'd be measured on.\n[05:33] Alison Raymond: We are also evaluating Zendesk, just so you know the landscape.\n[09:30] Brian Adams (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Brian Adams",
+      "Alison Raymond (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "call_duration_min": 27,
+      "call_index": 2
+    }
+  },
+  {
+    "envelope_id": "env_54e84bfef5",
+    "source": "gong_call",
+    "account_id": "acc_wonka",
+    "account_name": "Wonka Foods",
+    "opp_id": "opp_d1ac5524",
+    "timestamp": "2026-06-28T10:09:00",
+    "raw_text": "[00:00] Jamie Bridges (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Michael Murray (Head of CX Ops, Wonka Foods): Busy, but good. Happy to dig in.\n[03:05] Michael Murray: If we could consolidate onto one platform, my CFO's model puts that at roughly 600 thousand a year in tool spend. That's the number I'd be measured on.\n[05:33] Michael Murray: We are also evaluating HubSpot, just so you know the landscape.\n[07:02] Jamie Bridges (Rep): Internal note - Michael Murray is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Jamie Bridges (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jamie Bridges",
+      "Michael Murray (Head of CX Ops)"
+    ],
+    "metadata": {
+      "call_duration_min": 26,
+      "call_index": 0
+    }
+  },
+  {
+    "envelope_id": "env_93269163cb",
+    "source": "gong_email",
+    "account_id": "acc_soylent",
+    "account_name": "Soylent Corp",
+    "opp_id": "opp_5e428e86",
+    "timestamp": "2026-06-29T10:49:00",
+    "raw_text": "Subject: RE: Soylent Corp <> next steps\n\nFrom: Mrs. Nicole Powell MD\nTo: Christian Smith (Director of Customer Experience, Soylent Corp)\n\nHi Christian,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned SOC 2 and data residency, native integrations, and total cost of ownership as the things that matter most. Still accurate?\n\nBest,\nMrs. Nicole Powell MD\n\n---\n\nFrom: Christian Smith\nTo: Mrs. Nicole Powell MD\n\nHi Mrs.,\n\nProcess-wise: my team runs the eval, then it goes to a security review, then finance for final approval.\nAnd yes on requirements - scalability during peak season and native integrations are the deciders.\n\nThanks, Christian",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Christian Smith (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "subject": "RE: Soylent Corp <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_6dd7e499da",
+    "source": "gong_email",
+    "account_id": "acc_cyberdyne",
+    "account_name": "Cyberdyne Systems",
+    "opp_id": "opp_acf589ca",
+    "timestamp": "2026-06-30T10:25:00",
+    "raw_text": "Subject: RE: Cyberdyne Systems <> next steps\n\nFrom: Robert Nelson\nTo: April Hicks (VP of Support, Cyberdyne Systems)\n\nHi April,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n\nBest,\nRobert Nelson\n\n---\n\nFrom: April Hicks\nTo: Robert Nelson\n\nHi Robert,\n\nOn sign-off: ultimately this needs Karen Fox, our CFO, to approve the spend - she holds the budget for anything over 100k, so I'll need to bring her in.\nHeads up that procurement requires a full legal review and our MSA redlines usually take about three weeks, so we should start that early.\n\nThanks, April",
+    "participants": [
+      "Robert Nelson",
+      "April Hicks (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Cyberdyne Systems <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_0f9b43efc6",
+    "source": "gong_email",
+    "account_id": "acc_soylent",
+    "account_name": "Soylent Corp",
+    "opp_id": "opp_5e428e86",
+    "timestamp": "2026-07-02T10:26:00",
+    "raw_text": "Subject: RE: Soylent Corp <> next steps\n\nFrom: Mrs. Nicole Powell MD\nTo: Christian Smith (Director of Customer Experience, Soylent Corp)\n\nHi Christian,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned scalability during peak season, SOC 2 and data residency, and total cost of ownership as the things that matter most. Still accurate?\n\nBest,\nMrs. Nicole Powell MD\n\n---\n\nFrom: Christian Smith\nTo: Mrs. Nicole Powell MD\n\nHi Mrs.,\n\nProcess-wise: my team runs the eval, then it goes to a security review, then finance for final approval.\nAnd yes on requirements - reporting depth and native integrations are the deciders.\n\nThanks, Christian",
+    "participants": [
+      "Mrs. Nicole Powell MD",
+      "Christian Smith (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "subject": "RE: Soylent Corp <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_26e637eefd",
+    "source": "gong_email",
+    "account_id": "acc_umbrella",
+    "account_name": "Umbrella Logistics",
+    "opp_id": "opp_3b900e47",
+    "timestamp": "2026-07-04T10:07:00",
+    "raw_text": "Subject: RE: Umbrella Logistics <> next steps\n\nFrom: Jonathan Perez\nTo: Justin Herman (Support Operations Manager, Umbrella Logistics)\n\nHi Justin,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned total cost of ownership, native integrations, and SOC 2 and data residency as the things that matter most. Still accurate?\n\nBest,\nJonathan Perez\n\n---\n\nFrom: Justin Herman\nTo: Jonathan Perez\n\nHi Jonathan, thanks - swamped this week, will circle back. Justin",
+    "participants": [
+      "Jonathan Perez",
+      "Justin Herman (Support Operations Manager)"
+    ],
+    "metadata": {
+      "subject": "RE: Umbrella Logistics <> next steps",
+      "quiet_reply": true
+    }
+  },
+  {
+    "envelope_id": "env_7e1ee7ed02",
+    "source": "slack",
+    "account_id": "acc_soylent",
+    "account_name": "Soylent Corp",
+    "opp_id": "opp_5e428e86",
+    "timestamp": "2026-07-04T10:37:00",
+    "raw_text": "Mrs. Nicole Powell MD: anyone hit the 'HubSpot is cheaper' pushback on Soylent Corp? losing ground on price there\nJonathan Perez: yeah constant lately, HubSpot is discounting aggressively this quarter\nCameron Ellison: who's covering the SE for the demo tomorrow?\nJonathan Perez: lol the parking at the office event was chaos\nBrian Adams: coffee chat notes are in the drive\nCameron Ellison: great job on the QBR everyone",
+    "participants": [
+      "Mrs. Nicole Powell MD"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_2efc2cfd5f",
+    "source": "slack",
+    "account_id": "acc_stark",
+    "account_name": "Stark Industries",
+    "opp_id": "opp_7666a427",
+    "timestamp": "2026-07-04T10:50:00",
+    "raw_text": "Mrs. Nicole Powell MD: closed Stark Industries! 🎉\nMrs. Nicole Powell MD: what got us over the line vs Zendesk was leaning hard into the migration story - we mapped out a zero-downtime cutover and that's what flipped their ops lead. reusing that on every Zendesk deal from now on.\nRobert Nelson: huge, congrats - stealing that migration angle\nJamie Bridges: can someone approve my expense report\nJonathan Perez: who's covering the SE for the demo tomorrow?",
+    "participants": [
+      "Mrs. Nicole Powell MD"
+    ],
+    "metadata": {
+      "channel": "#win-wire"
+    }
+  },
+  {
+    "envelope_id": "env_ead427e8b1",
+    "source": "gong_call",
+    "account_id": "acc_pied",
+    "account_name": "Pied Piper",
+    "opp_id": "opp_cbce8ff5",
+    "timestamp": "2026-07-05T10:00:00",
+    "raw_text": "[00:00] Jamie Bridges (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:14] Walter Hunter (VP of Customer Success, Pied Piper): Honestly a bit slammed. I'll be straight with you, things have gotten quieter internally on this.\n[01:20] Walter Hunter: The core issue hasn't changed - reporting is a nightmare - I'm exporting to spreadsheets every single week. It's the thing keeping me up at night.\n[03:05] Walter Hunter: If we could deflect a third of tickets to self-service, my CFO's model puts that at about 2 million annually in headcount we wouldn't have to add. That's the number I'd be measured on.\n[05:40] Walter Hunter: I'll be honest, HubSpot has been pushing hard. A few folks on my team are leaning their way, so we're taking a serious look at HubSpot.\n[07:10] Jamie Bridges (Rep): Internal note - Walter Hunter has been our champion but is noticeably less responsive this call; may be losing air cover.\n[09:30] Jamie Bridges (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Jamie Bridges",
+      "Walter Hunter (VP of Customer Success)"
+    ],
+    "metadata": {
+      "call_duration_min": 23,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_08eff55e0b",
+    "source": "gong_email",
+    "account_id": "acc_globex",
+    "account_name": "Globex",
+    "opp_id": "opp_99dda3c3",
+    "timestamp": "2026-07-05T10:12:00",
+    "raw_text": "Subject: RE: Globex <> next steps\n\nFrom: Jamie Bridges\nTo: Curtis Brown (VP of Support, Globex)\n\nHi Curtis,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n\nBest,\nJamie Bridges\n\n---\n\nFrom: Curtis Brown\nTo: Jamie Bridges\n\nHi Jamie,\n\nOn sign-off: ultimately this needs Sherri Wade, our CFO, to approve the spend - she holds the budget for anything over 100k, so I'll need to bring her in.\nProcess-wise: my team runs the eval, then it goes to a security review, then finance for final approval.\n\nThanks, Curtis",
+    "participants": [
+      "Jamie Bridges",
+      "Curtis Brown (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Globex <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_f15bf4bb3d",
+    "source": "slack",
+    "account_id": "acc_umbrella",
+    "account_name": "Umbrella Logistics",
+    "opp_id": "opp_3b900e47",
+    "timestamp": "2026-07-05T10:35:00",
+    "raw_text": "Jonathan Perez: anyone hit the 'HubSpot is cheaper' pushback on Umbrella Logistics? losing ground on price there\nJamie Bridges: yeah constant lately, HubSpot is discounting aggressively this quarter\nMrs. Nicole Powell MD: lol the parking at the office event was chaos\nJamie Bridges: who's covering the SE for the demo tomorrow?\nBrian Adams: can someone approve my expense report",
+    "participants": [
+      "Jonathan Perez"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_d6db239c9c",
+    "source": "gong_call",
+    "account_id": "acc_initech",
+    "account_name": "Initech",
+    "opp_id": "opp_ad4437aa",
+    "timestamp": "2026-07-07T10:28:00",
+    "raw_text": "[00:00] Robert Nelson (Rep): Thanks for making time again. How are things on your end since we last spoke?\n[00:11] Amy Tran (Support Operations Manager, Initech): Busy, but good. Happy to dig in.\n[01:20] Amy Tran: The core issue hasn't changed - agents waste the first two minutes of every call just figuring out who they're talking to. It's the thing keeping me up at night.\n[05:33] Amy Tran: We are also evaluating Zendesk, just so you know the landscape.\n[07:02] Robert Nelson (Rep): Internal note - Amy Tran is clearly our champion here, actively selling this internally on our behalf.\n[09:30] Robert Nelson (Rep): Great, I'll follow up with next steps over email. Appreciate the time.",
+    "participants": [
+      "Robert Nelson",
+      "Amy Tran (Support Operations Manager)"
+    ],
+    "metadata": {
+      "call_duration_min": 18,
+      "call_index": 1
+    }
+  },
+  {
+    "envelope_id": "env_256e962127",
+    "source": "slack",
+    "account_id": "acc_northwind",
+    "account_name": "Northwind Systems",
+    "opp_id": "opp_ddb20374",
+    "timestamp": "2026-07-08T10:11:00",
+    "raw_text": "Cameron Ellison: anyone hit the 'Zendesk is cheaper' pushback on Northwind Systems? losing ground on price there\nRobert Nelson: yeah constant lately, Zendesk is discounting aggressively this quarter\nBrian Adams: can someone approve my expense report\nMrs. Nicole Powell MD: great job on the QBR everyone\nRobert Nelson: reminder: forecast calls locked by EOD Friday",
+    "participants": [
+      "Cameron Ellison"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_baf1d77131",
+    "source": "gong_email",
+    "account_id": "acc_initech",
+    "account_name": "Initech",
+    "opp_id": "opp_ad4437aa",
+    "timestamp": "2026-07-09T10:41:00",
+    "raw_text": "Subject: RE: Initech <> next steps\n\nFrom: Robert Nelson\nTo: Amy Tran (Support Operations Manager, Initech)\n\nHi Amy,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n\nBest,\nRobert Nelson\n\n---\n\nFrom: Amy Tran\nTo: Robert Nelson\n\nHi Robert,\n\n\nThanks, Amy",
+    "participants": [
+      "Robert Nelson",
+      "Amy Tran (Support Operations Manager)"
+    ],
+    "metadata": {
+      "subject": "RE: Initech <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_a29bf7270a",
+    "source": "gong_email",
+    "account_id": "acc_wayne",
+    "account_name": "Wayne Enterprises",
+    "opp_id": "opp_7ce6a9fe",
+    "timestamp": "2026-07-11T10:18:00",
+    "raw_text": "Subject: RE: Wayne Enterprises <> next steps\n\nFrom: Brian Adams\nTo: Alison Raymond (Director of Customer Experience, Wayne Enterprises)\n\nHi Alison,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n\nBest,\nBrian Adams\n\n---\n\nFrom: Alison Raymond\nTo: Brian Adams\n\nHi Brian,\n\n\nThanks, Alison",
+    "participants": [
+      "Brian Adams",
+      "Alison Raymond (Director of Customer Experience)"
+    ],
+    "metadata": {
+      "subject": "RE: Wayne Enterprises <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_1fcd378de8",
+    "source": "gong_email",
+    "account_id": "acc_pied",
+    "account_name": "Pied Piper",
+    "opp_id": "opp_cbce8ff5",
+    "timestamp": "2026-07-12T10:11:00",
+    "raw_text": "Subject: RE: Pied Piper <> next steps\n\nFrom: Jamie Bridges\nTo: Walter Hunter (VP of Customer Success, Pied Piper)\n\nHi Walter,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n1. On requirements, you'd mentioned reporting depth, ease of admin, and native integrations as the things that matter most. Still accurate?\n\nBest,\nJamie Bridges\n\n---\n\nFrom: Walter Hunter\nTo: Jamie Bridges\n\nHi Jamie, thanks - swamped this week, will circle back. Walter",
+    "participants": [
+      "Jamie Bridges",
+      "Walter Hunter (VP of Customer Success)"
+    ],
+    "metadata": {
+      "subject": "RE: Pied Piper <> next steps",
+      "quiet_reply": true
+    }
+  },
+  {
+    "envelope_id": "env_1cd12e148d",
+    "source": "gong_email",
+    "account_id": "acc_cyberdyne",
+    "account_name": "Cyberdyne Systems",
+    "opp_id": "opp_acf589ca",
+    "timestamp": "2026-07-12T10:32:00",
+    "raw_text": "Subject: RE: Cyberdyne Systems <> next steps\n\nFrom: Robert Nelson\nTo: April Hicks (VP of Support, Cyberdyne Systems)\n\nHi April,\n\nFollowing up on our call - a few questions so I can line up the right next steps.\n\n\nBest,\nRobert Nelson\n\n---\n\nFrom: April Hicks\nTo: Robert Nelson\n\nHi Robert,\n\nOn sign-off: ultimately this needs Jimmy Osborne, our CFO, to approve the spend - she holds the budget for anything over 100k, so I'll need to bring her in.\nHeads up that procurement requires a full legal review and our MSA redlines usually take about three weeks, so we should start that early.\n\nThanks, April",
+    "participants": [
+      "Robert Nelson",
+      "April Hicks (VP of Support)"
+    ],
+    "metadata": {
+      "subject": "RE: Cyberdyne Systems <> next steps",
+      "quiet_reply": false
+    }
+  },
+  {
+    "envelope_id": "env_a82d0420d1",
+    "source": "slack",
+    "account_id": "acc_wayne",
+    "account_name": "Wayne Enterprises",
+    "opp_id": "opp_7ce6a9fe",
+    "timestamp": "2026-07-13T10:12:00",
+    "raw_text": "Brian Adams: anyone hit the 'Zendesk is cheaper' pushback on Wayne Enterprises? losing ground on price there\nCameron Ellison: yeah constant lately, Zendesk is discounting aggressively this quarter\nJamie Bridges: reminder: forecast calls locked by EOD Friday\nJamie Bridges: great job on the QBR everyone\nJonathan Perez: who's covering the SE for the demo tomorrow?\nCameron Ellison: coffee chat notes are in the drive",
+    "participants": [
+      "Brian Adams"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_cf7f5f83c6",
+    "source": "slack",
+    "account_id": "acc_pied",
+    "account_name": "Pied Piper",
+    "opp_id": "opp_cbce8ff5",
+    "timestamp": "2026-07-13T10:26:00",
+    "raw_text": "Jamie Bridges: anyone hit the 'HubSpot is cheaper' pushback on Pied Piper? losing ground on price there\nMrs. Nicole Powell MD: yeah constant lately, HubSpot is discounting aggressively this quarter\nJonathan Perez: can someone approve my expense report\nCameron Ellison: who's covering the SE for the demo tomorrow?",
+    "participants": [
+      "Jamie Bridges"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_2a9a6eb905",
+    "source": "slack",
+    "account_id": "acc_globex",
+    "account_name": "Globex",
+    "opp_id": "opp_99dda3c3",
+    "timestamp": "2026-07-13T10:30:00",
+    "raw_text": "Jamie Bridges: anyone hit the 'Zendesk is cheaper' pushback on Globex? losing ground on price there\nRobert Nelson: yeah constant lately, Zendesk is discounting aggressively this quarter\nJonathan Perez: reminder: forecast calls locked by EOD Friday\nCameron Ellison: lol the parking at the office event was chaos",
+    "participants": [
+      "Jamie Bridges"
+    ],
+    "metadata": {
+      "channel": "#deal-help"
+    }
+  },
+  {
+    "envelope_id": "env_winmassive1",
+    "source": "slack",
+    "account_id": "acc_massive",
+    "account_name": "Massive Dynamic",
+    "opp_id": "opp_mass0a11",
+    "timestamp": "2026-06-24T10:40:00",
+    "raw_text": "Cameron Ellison: closed Massive Dynamic! 🎉\nCameron Ellison: same story as always vs Zendesk - we won on the migration story, walked their ops lead through a zero-downtime cutover plan and it flipped the eval. this migration play keeps beating Zendesk.\nBrian Adams: love it, that zero-downtime migration angle is money\nJonathan Perez: reminder: forecast calls locked by EOD Friday",
+    "participants": [
+      "Cameron Ellison"
+    ],
+    "metadata": {
+      "channel": "#win-wire"
+    }
+  },
+  {
+    "envelope_id": "env_winprestig1",
+    "source": "slack",
+    "account_id": "acc_prestige",
+    "account_name": "Prestige Worldwide",
+    "opp_id": "opp_pres0b22",
+    "timestamp": "2026-07-01T10:15:00",
+    "raw_text": "Jonathan Perez: closed Prestige Worldwide! 🎉\nJonathan Perez: beat Zendesk again by leaning into the migration story - the zero-downtime cutover plan is what sealed it with their ops lead. third Zendesk deal we've won with this same play.\nJamie Bridges: huge, that zero-downtime migration story is our best Zendesk counter\nBrian Adams: coffee chat notes are in the drive",
+    "participants": [
+      "Jonathan Perez"
+    ],
+    "metadata": {
+      "channel": "#win-wire"
+    }
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "account": "Northwind Systems",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "crm_stage": "Commit",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_criteria",
+      "identify_pain",
+      "metrics"
+    ],
+    "meddpicc_absent": [
+      "decision_process",
+      "economic_buyer",
+      "paper_process"
+    ],
+    "competitor": "Zendesk",
+    "trajectory": "rotting",
+    "has_win_play": false
+  },
+  {
+    "account": "Globex",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "crm_stage": "Evaluation",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_process",
+      "economic_buyer",
+      "identify_pain",
+      "metrics"
+    ],
+    "meddpicc_absent": [
+      "decision_criteria",
+      "paper_process"
+    ],
+    "competitor": "Zendesk",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Initech",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "crm_stage": "Proposal",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "identify_pain"
+    ],
+    "meddpicc_absent": [
+      "decision_criteria",
+      "decision_process",
+      "economic_buyer",
+      "metrics",
+      "paper_process"
+    ],
+    "competitor": "Zendesk",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Stark Industries",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "crm_stage": "Commit",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_criteria",
+      "decision_process",
+      "economic_buyer",
+      "identify_pain",
+      "metrics",
+      "paper_process"
+    ],
+    "meddpicc_absent": [],
+    "competitor": "Zendesk",
+    "trajectory": "accelerating",
+    "has_win_play": true
+  },
+  {
+    "account": "Umbrella Logistics",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "crm_stage": "Negotiation",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_criteria",
+      "identify_pain",
+      "metrics"
+    ],
+    "meddpicc_absent": [
+      "decision_process",
+      "economic_buyer",
+      "paper_process"
+    ],
+    "competitor": "HubSpot",
+    "trajectory": "rotting",
+    "has_win_play": false
+  },
+  {
+    "account": "Hooli",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "crm_stage": "Negotiation",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_criteria",
+      "decision_process",
+      "paper_process"
+    ],
+    "meddpicc_absent": [
+      "economic_buyer",
+      "identify_pain",
+      "metrics"
+    ],
+    "competitor": "Intercom",
+    "trajectory": "accelerating",
+    "has_win_play": true
+  },
+  {
+    "account": "Vandelay Industries",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "crm_stage": "Evaluation",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "economic_buyer",
+      "identify_pain",
+      "metrics",
+      "paper_process"
+    ],
+    "meddpicc_absent": [
+      "decision_criteria",
+      "decision_process"
+    ],
+    "competitor": "Zendesk",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Wayne Enterprises",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "crm_stage": "Discovery",
+    "meddpicc_present": [
+      "competition",
+      "metrics"
+    ],
+    "meddpicc_absent": [
+      "champion",
+      "decision_criteria",
+      "decision_process",
+      "economic_buyer",
+      "identify_pain",
+      "paper_process"
+    ],
+    "competitor": "Zendesk",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Wonka Foods",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "crm_stage": "Discovery",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "metrics",
+      "paper_process"
+    ],
+    "meddpicc_absent": [
+      "decision_criteria",
+      "decision_process",
+      "economic_buyer",
+      "identify_pain"
+    ],
+    "competitor": "HubSpot",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Cyberdyne Systems",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "crm_stage": "Evaluation",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "economic_buyer",
+      "identify_pain",
+      "paper_process"
+    ],
+    "meddpicc_absent": [
+      "decision_criteria",
+      "decision_process",
+      "metrics"
+    ],
+    "competitor": "Zoho",
+    "trajectory": "healthy",
+    "has_win_play": false
+  },
+  {
+    "account": "Soylent Corp",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "crm_stage": "Discovery",
+    "meddpicc_present": [
+      "champion",
+      "decision_criteria",
+      "decision_process",
+      "identify_pain"
+    ],
+    "meddpicc_absent": [
+      "competition",
+      "economic_buyer",
+      "metrics",
+      "paper_process"
+    ],
+    "competitor": null,
+    "trajectory": "accelerating",
+    "has_win_play": false
+  },
+  {
+    "account": "Pied Piper",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "crm_stage": "Discovery",
+    "meddpicc_present": [
+      "champion",
+      "competition",
+      "decision_criteria",
+      "decision_process",
+      "economic_buyer",
+      "identify_pain",
+      "metrics",
+      "paper_process"
+    ],
+    "meddpicc_absent": [],
+    "competitor": "HubSpot",
+    "trajectory": "rotting",
+    "has_win_play": false
+  }
+]
