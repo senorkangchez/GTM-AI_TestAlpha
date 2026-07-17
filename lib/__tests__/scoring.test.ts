@@ -4,9 +4,11 @@ import { bandOf } from "../format";
 import { healthySignals, atRiskSignals, sig } from "./helpers";
 
 describe("decay", () => {
-  it("is 1 at age 0 and ~0.5 at the half-life", () => {
+  it("gives full credit inside the grace window, then decays", () => {
     expect(decay(0)).toBe(1);
-    expect(decay(21)).toBeCloseTo(0.5, 2);
+    expect(decay(14)).toBe(1); // grace window
+    expect(decay(14 + 45)).toBeCloseTo(0.5, 2); // one half-life past grace
+    expect(decay(20)).toBeLessThan(1);
   });
   it("floors at DECAY_FLOOR for very old evidence", () => {
     expect(decay(400)).toBe(DECAY_FLOOR);

@@ -17,9 +17,13 @@ import { AS_OF, ageInDays, bandOf, clamp, round } from "./format";
 
 // ---- Tunable constants (visible on purpose) --------------------------------
 
-export const HALF_LIFE_DAYS = 21;
+// Recency: evidence gets full credit inside a grace window (a 2-3 week-old call
+// is not "stale" in a 6-week cycle), then decays with a 45-day half-life and a
+// floor. Only genuinely old (60d+) evidence is heavily penalized.
+export const GRACE_DAYS = 14;
+export const HALF_LIFE_DAYS = 45;
 export const DECAY_FLOOR = 0.1;
-export const STALE_CUTOFF_DAYS = 35; // UI label; continuous decay does the real work
+export const STALE_CUTOFF_DAYS = 45; // UI label
 
 /** Back-half MEDDPICC predicts close, so it weighs more. Σ = 11.5. */
 export const IMPORTANCE: Record<MeddpiccField, number> = {
@@ -82,7 +86,8 @@ const POS_ENGAGEMENT = ["momentum", "excited", "enthusiastic", "dig in", "great 
 // ---- Core helpers ----------------------------------------------------------
 
 export function decay(ageDays: number): number {
-  return clamp(0.5 ** (ageDays / HALF_LIFE_DAYS), DECAY_FLOOR, 1);
+  if (ageDays <= GRACE_DAYS) return 1;
+  return clamp(0.5 ** ((ageDays - GRACE_DAYS) / HALF_LIFE_DAYS), DECAY_FLOOR, 1);
 }
 
 function effective(sig: Signal, asOf: string): number {
@@ -140,9 +145,12 @@ export function scoreAccount(signals: Signal[], asOf: string = AS_OF): Scored {
   const missing = MEDDPICC_FIELDS_ORDER.filter((f) => !presentFields.includes(f));
   const missingBackHalf = missing.filter((f) => BACK_HALF.includes(f));
 
-  // Driver 2 — competitive threat (inverted).
+  // Driver 2 — competitive threat (inverted). Based on the STRONGEST mention plus
+  // a capped breadth bump — not a linear sum, so a competitor named on 3 calls
+  // isn't treated as 3x the threat of the same competitor named once.
   const competitorSignals = signals.filter((s) => s.signal_type === "competitor");
-  const threatRaw = competitorSignals.reduce((a, s) => a + effective(s, asOf), 0);
+  const maxCompEff = competitorSignals.reduce((m, s) => Math.max(m, effective(s, asOf)), 0);
+  const threatRaw = maxCompEff * (1 + 0.15 * Math.min(competitorSignals.length - 1, 3));
   const competitive01 = clamp(1 - Math.min(threatRaw / THREAT_SATURATION, 1));
   const topCompetitor = competitorSignals
     .slice()

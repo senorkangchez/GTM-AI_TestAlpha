@@ -1,0 +1,14 @@
+{
+  "mode": "mock",
+  "model": "deterministic-mock",
+  "envelopes": 46,
+  "signals": 151,
+  "by_type": {
+    "meddpicc": 78,
+    "competitor": 31,
+    "engagement": 30,
+    "objection": 9,
+    "win_play": 3
+  },
+  "envelopes_with_zero_signals": 2
+}
