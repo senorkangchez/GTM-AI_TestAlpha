@@ -23,6 +23,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <nav className="flex items-center gap-5 text-sm text-muted">
               <Link href="/" className="hover:text-foreground">Territories</Link>
               <Link href="/routing" className="hover:text-foreground">Routing</Link>
+              <Link href="/live" className="hover:text-foreground">Live extract</Link>
               <Link href="/how-it-works" className="hover:text-foreground">How it works</Link>
               <span
                 title={`Extraction mode: ${meta.mode}`}
