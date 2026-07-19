@@ -8,6 +8,8 @@ import { DriverBars } from "@/components/DriverBars";
 import { DivergenceHero } from "@/components/DivergenceHero";
 import { ChangeFeed } from "@/components/ChangeFeed";
 import { DestinationBadge } from "@/components/RoutingTable";
+import { RubricScorecard } from "@/components/RubricScorecard";
+import { ProcessDivergenceCard } from "@/components/ProcessDivergenceCard";
 
 export function generateStaticParams() {
   return listAccounts().map((a) => ({ accountId: a.account_id }));
@@ -84,6 +86,22 @@ export default async function AccountPage({
           </div>
         </section>
       </div>
+
+      {account.rubric && (
+        <section className="mt-8">
+          <h2 className="text-sm font-semibold text-muted mb-3">
+            Leadership rubric — graded from the field, zero rep data entry
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <RubricScorecard rubric={account.rubric} />
+            {account.processDivergence && (
+              <div>
+                <ProcessDivergenceCard pd={account.processDivergence} />
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       <section className="mt-8">
         <h2 className="text-sm font-semibold text-muted mb-3">

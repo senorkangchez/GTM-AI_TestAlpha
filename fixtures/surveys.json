@@ -1,0 +1,52 @@
+[
+  {
+    "survey_id": "deal_qualification_standard",
+    "name": "Deal Qualification Standard",
+    "author": "VP Sales (leadership-defined)",
+    "description": "Leadership defines what 'qualified' means; the agent grades every deal against it from the field, with evidence. AEs/SEs never fill this out. item_id maps to the field evidence that satisfies it.",
+    "items": [
+      {
+        "item_id": "metrics",
+        "question": "Is there a documented, quantified business case?",
+        "answer_type": "boolean",
+        "weight": 1.0,
+        "guidance": "A dollarized outcome the buyer is measured on."
+      },
+      {
+        "item_id": "economic_buyer",
+        "question": "Is the economic buyer identified and engaged?",
+        "answer_type": "boolean",
+        "weight": 1.5,
+        "guidance": "Someone with budget authority is named."
+      },
+      {
+        "item_id": "decision_process",
+        "question": "Is the decision / mutual action plan mapped?",
+        "answer_type": "boolean",
+        "weight": 1.5,
+        "guidance": "The steps from here to signature are known."
+      },
+      {
+        "item_id": "champion",
+        "question": "Is there a mobilized internal champion?",
+        "answer_type": "boolean",
+        "weight": 1.0,
+        "guidance": "Someone selling on our behalf internally."
+      },
+      {
+        "item_id": "competition",
+        "question": "Is the competitive landscape known and addressed?",
+        "answer_type": "boolean",
+        "weight": 1.0,
+        "guidance": "We know who we're up against."
+      },
+      {
+        "item_id": "paper_process",
+        "question": "Is the paper / procurement process understood?",
+        "answer_type": "boolean",
+        "weight": 1.0,
+        "guidance": "Legal, security, MSA timelines are mapped."
+      }
+    ]
+  }
+]
