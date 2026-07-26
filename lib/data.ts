@@ -5,8 +5,10 @@ import envelopesJson from "@/fixtures/envelopes.json";
 import signalsJson from "@/fixtures/signals.precomputed.json";
 import groundTruthJson from "@/fixtures/ground_truth.json";
 import metaJson from "@/fixtures/signals.meta.json";
-import type { AccountModel, GroupRollup, Signal, SignalEnvelope } from "./types";
+import touchesJson from "@/fixtures/touches.json";
+import type { AccountModel, GroupRollup, Signal, SignalEnvelope, Touch } from "./types";
 import { scoreAccount, computeDivergence } from "./scoring";
+import { scoreProgression } from "./progression";
 import { computeRubric, computeProcessDivergence } from "./rubric";
 import { buildGroupRollup } from "./rollup";
 import { getEnrichment, buildOrgTree, orgTitle } from "./org";
@@ -19,6 +21,12 @@ const signals = signalsJson as Signal[];
 
 /** All validated signals, including those from historical won accounts (win-wires). */
 export const allSignals = signals;
+
+const touches = touchesJson as Touch[];
+export const allTouches = touches;
+function touchesForAccount(accountId: string): Touch[] {
+  return touches.filter((t) => t.account_id === accountId);
+}
 
 interface GroundTruth {
   account: string;
@@ -57,6 +65,7 @@ export function buildAccounts(): AccountModel[] {
     const score = scoreAccount(accSignals, AS_OF);
     const scorePrior = scoreAccount(accSignals, PRIOR);
     const rubric = computeRubric(g.account_id, accSignals);
+    const accTouches = touchesForAccount(g.account_id);
     return {
       account_id: g.account_id,
       account_name: g.account,
@@ -66,8 +75,10 @@ export function buildAccounts(): AccountModel[] {
       territory: enr?.territory ?? "unassigned",
       district: enr?.district ?? "unassigned",
       signals: accSignals,
+      touches: accTouches,
       score,
       scorePrior,
+      progression: scoreProgression(accTouches, AS_OF),
       divergence: computeDivergence(score, g.crm_stage),
       rubric,
       processDivergence: computeProcessDivergence(rubric, g.crm_stage),

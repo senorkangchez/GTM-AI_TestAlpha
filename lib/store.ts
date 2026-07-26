@@ -11,6 +11,8 @@ import {
   envelopeById,
 } from "./data";
 import { routeAllSignals } from "./router";
+import { buildLanding } from "./landing";
+import type { LandingRow } from "./types";
 
 interface Store {
   accounts: AccountModel[];
@@ -63,6 +65,14 @@ export const accountsInTerritory = (territory: string) =>
   store().accounts.filter((a) => a.territory === territory);
 export const accountsInDistrict = (district: string) =>
   store().accounts.filter((a) => a.district === district);
+
+export const getLanding = (accountId: string): LandingRow[] => {
+  const a = getAccount(accountId);
+  return a ? buildLanding(a) : [];
+};
+/** All present (suggested) landings across accounts — the global ops queue. */
+export const listAllLandings = (): LandingRow[] =>
+  store().accounts.flatMap((a) => buildLanding(a).filter((r) => r.present));
 
 export const getChangeFeed = () => store().feed;
 export const getRouting = () => store().routing;

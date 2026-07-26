@@ -1,0 +1,875 @@
+[
+  {
+    "touch_id": "tch_00002l",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-04T23:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_000025",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T16:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00002e",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-05T16:00:00.000Z",
+    "summary": "downloaded the ROI whitepaper"
+  },
+  {
+    "touch_id": "tch_00001o",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-05T18:00:00.000Z",
+    "summary": "downloaded the ROI whitepaper"
+  },
+  {
+    "touch_id": "tch_000019",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T20:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00001c",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T20:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00002f",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T20:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00002m",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T22:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00000k",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-05T23:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_000011",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-06T16:00:00.000Z",
+    "summary": "clicked webinar invite"
+  },
+  {
+    "touch_id": "tch_00000c",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-06T20:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_00000s",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-06T21:00:00.000Z",
+    "summary": "sent nurture email"
+  },
+  {
+    "touch_id": "tch_000003",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-07T16:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00002d",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-07T16:00:00.000Z",
+    "summary": "downloaded the ROI whitepaper"
+  },
+  {
+    "touch_id": "tch_00002k",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-07T16:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_000001",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-07T18:00:00.000Z",
+    "summary": "clicked webinar invite"
+  },
+  {
+    "touch_id": "tch_00001b",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-07T18:00:00.000Z",
+    "summary": "sent nurture email"
+  },
+  {
+    "touch_id": "tch_000012",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-08T17:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_00001g",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-08T21:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00001h",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-08T23:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_000027",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-09T19:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_000000",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-10T16:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00001y",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-10T20:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00000r",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-10T21:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00000b",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-10T22:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_000002",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-11T18:00:00.000Z",
+    "summary": "sent nurture email"
+  },
+  {
+    "touch_id": "tch_00001p",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-11T22:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_00000d",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-11T23:00:00.000Z",
+    "summary": "sent nurture email"
+  },
+  {
+    "touch_id": "tch_00000j",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-12T00:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00001n",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-12T00:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_000026",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-12T00:00:00.000Z",
+    "summary": "enrolled in drip campaign"
+  },
+  {
+    "touch_id": "tch_00001a",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-12T16:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00001q",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-12T18:00:00.000Z",
+    "summary": "clicked webinar invite"
+  },
+  {
+    "touch_id": "tch_000010",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-13T17:00:00.000Z",
+    "summary": "sent nurture email"
+  },
+  {
+    "touch_id": "tch_00001z",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-13T19:00:00.000Z",
+    "summary": "hit the pricing page"
+  },
+  {
+    "touch_id": "tch_00001i",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "marketo",
+    "direction": "inbound",
+    "timestamp": "2026-06-13T21:00:00.000Z",
+    "summary": "clicked webinar invite"
+  },
+  {
+    "touch_id": "tch_00000t",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "marketo",
+    "direction": "outbound",
+    "timestamp": "2026-06-13T23:00:00.000Z",
+    "summary": "added to webinar invite list"
+  },
+  {
+    "touch_id": "tch_00001t",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-14T17:00:00.000Z",
+    "summary": "sent sequence step 1"
+  },
+  {
+    "touch_id": "tch_00001r",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-15T19:00:00.000Z",
+    "summary": "no reply to sequence step 1"
+  },
+  {
+    "touch_id": "tch_00002a",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-17T17:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00000g",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-17T19:00:00.000Z",
+    "summary": "no reply to sequence step 1"
+  },
+  {
+    "touch_id": "tch_00001s",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-17T21:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_000006",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-18T18:00:00.000Z",
+    "summary": "sent sequence step 1"
+  },
+  {
+    "touch_id": "tch_00000m",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-18T20:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_000005",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-18T21:00:00.000Z",
+    "summary": "no reply to sequence step 1"
+  },
+  {
+    "touch_id": "tch_000015",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-19T18:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00000o",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-20T00:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_00000v",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-20T17:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_00000n",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-21T16:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_00001u",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-21T18:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_000020",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-21T20:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_000022",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-21T21:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_00000w",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-21T22:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_000014",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-22T00:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_000021",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-22T17:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_00001l",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-23T16:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_00001e",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-23T19:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_00000l",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-23T20:00:00.000Z",
+    "summary": "sent sequence step 1"
+  },
+  {
+    "touch_id": "tch_000013",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-23T20:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00000f",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-23T22:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_00002j",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-24T18:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_00000e",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-24T19:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00001v",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-24T19:00:00.000Z",
+    "summary": "shared requirements over email"
+  },
+  {
+    "touch_id": "tch_00000u",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-25T20:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00001d",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-25T20:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_000028",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-25T20:00:00.000Z",
+    "summary": "no reply to sequence step 1"
+  },
+  {
+    "touch_id": "tch_000004",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-25T22:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_00001j",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-25T23:00:00.000Z",
+    "summary": "sent follow-up, no response"
+  },
+  {
+    "touch_id": "tch_000007",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-26T17:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_00000h",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-26T17:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_000029",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-26T17:00:00.000Z",
+    "summary": "replied to sequence step 2"
+  },
+  {
+    "touch_id": "tch_00002o",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-26T17:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00000p",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-26T20:00:00.000Z",
+    "summary": "shared requirements over email"
+  },
+  {
+    "touch_id": "tch_000023",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-27T17:00:00.000Z",
+    "summary": "replied to AE follow-up"
+  },
+  {
+    "touch_id": "tch_00001f",
+    "account_id": "acc_pied",
+    "opp_id": "opp_cbce8ff5",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-27T18:00:00.000Z",
+    "summary": "sent sequence step 1"
+  },
+  {
+    "touch_id": "tch_00002n",
+    "account_id": "acc_wonka",
+    "opp_id": "opp_d1ac5524",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-27T20:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_000016",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-28T00:00:00.000Z",
+    "summary": "replied to AE follow-up"
+  },
+  {
+    "touch_id": "tch_00001k",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-28T00:00:00.000Z",
+    "summary": "booked intro from cold email"
+  },
+  {
+    "touch_id": "tch_00002i",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "outreach",
+    "direction": "outbound",
+    "timestamp": "2026-06-28T17:00:00.000Z",
+    "summary": "no reply to sequence step 1"
+  },
+  {
+    "touch_id": "tch_00001w",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-29T17:00:00.000Z",
+    "summary": "looped in a colleague"
+  },
+  {
+    "touch_id": "tch_00002g",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-30T00:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_00001m",
+    "account_id": "acc_soylent",
+    "opp_id": "opp_5e428e86",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-30T21:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_00002h",
+    "account_id": "acc_wayne",
+    "opp_id": "opp_7ce6a9fe",
+    "channel": "outreach",
+    "direction": "inbound",
+    "timestamp": "2026-06-30T22:00:00.000Z",
+    "summary": "opened outreach email"
+  },
+  {
+    "touch_id": "tch_000008",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-06-30T23:00:00.000Z",
+    "summary": "looped in a colleague"
+  },
+  {
+    "touch_id": "tch_00000z",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "email",
+    "direction": "outbound",
+    "timestamp": "2026-07-01T21:00:00.000Z",
+    "summary": "emailed recap, no reply"
+  },
+  {
+    "touch_id": "tch_00000y",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "email",
+    "direction": "outbound",
+    "timestamp": "2026-07-03T18:00:00.000Z",
+    "summary": "chased for next steps"
+  },
+  {
+    "touch_id": "tch_000018",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "gong_call",
+    "direction": "outbound",
+    "timestamp": "2026-07-03T18:00:00.000Z",
+    "summary": "proposed call time"
+  },
+  {
+    "touch_id": "tch_00002c",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-07-03T18:00:00.000Z",
+    "summary": "looped in a colleague"
+  },
+  {
+    "touch_id": "tch_00001x",
+    "account_id": "acc_stark",
+    "opp_id": "opp_7666a427",
+    "channel": "gong_call",
+    "direction": "inbound",
+    "timestamp": "2026-07-03T20:00:00.000Z",
+    "summary": "exec alignment call"
+  },
+  {
+    "touch_id": "tch_00000x",
+    "account_id": "acc_initech",
+    "opp_id": "opp_ad4437aa",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-07-04T17:00:00.000Z",
+    "summary": "shared requirements over email"
+  },
+  {
+    "touch_id": "tch_000009",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "email",
+    "direction": "outbound",
+    "timestamp": "2026-07-05T17:00:00.000Z",
+    "summary": "emailed recap, no reply"
+  },
+  {
+    "touch_id": "tch_00002b",
+    "account_id": "acc_vandelay",
+    "opp_id": "opp_e713afd6",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-07-06T22:00:00.000Z",
+    "summary": "shared requirements over email"
+  },
+  {
+    "touch_id": "tch_00000i",
+    "account_id": "acc_globex",
+    "opp_id": "opp_99dda3c3",
+    "channel": "email",
+    "direction": "inbound",
+    "timestamp": "2026-07-07T18:00:00.000Z",
+    "summary": "looped in a colleague"
+  },
+  {
+    "touch_id": "tch_00000a",
+    "account_id": "acc_cyberdyne",
+    "opp_id": "opp_acf589ca",
+    "channel": "email",
+    "direction": "outbound",
+    "timestamp": "2026-07-07T22:00:00.000Z",
+    "summary": "emailed recap, no reply"
+  },
+  {
+    "touch_id": "tch_000024",
+    "account_id": "acc_umbrella",
+    "opp_id": "opp_3b900e47",
+    "channel": "gong_call",
+    "direction": "outbound",
+    "timestamp": "2026-07-10T17:00:00.000Z",
+    "summary": "pricing call"
+  },
+  {
+    "touch_id": "tch_00000q",
+    "account_id": "acc_hooli",
+    "opp_id": "opp_f45e8967",
+    "channel": "gong_call",
+    "direction": "inbound",
+    "timestamp": "2026-07-10T21:00:00.000Z",
+    "summary": "technical deep-dive call"
+  },
+  {
+    "touch_id": "tch_000017",
+    "account_id": "acc_northwind",
+    "opp_id": "opp_ddb20374",
+    "channel": "gong_call",
+    "direction": "outbound",
+    "timestamp": "2026-07-11T16:00:00.000Z",
+    "summary": "left voicemail, call not held"
+  }
+]

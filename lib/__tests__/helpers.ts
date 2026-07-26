@@ -2,6 +2,7 @@
 import type { AccountModel, MeddpiccField, Signal, SignalType } from "../types";
 import { AS_OF } from "../format";
 import { scoreAccount, computeDivergence } from "../scoring";
+import { scoreProgression } from "../progression";
 
 export function daysAgo(n: number): string {
   return new Date(new Date(AS_OF).getTime() - n * 86_400_000).toISOString();
@@ -89,8 +90,10 @@ export function makeAccount(
     territory,
     district,
     signals,
+    touches: [],
     score,
     scorePrior: score,
+    progression: scoreProgression([]),
     divergence: computeDivergence(score, crm_stage),
     rubric: null,
     processDivergence: null,

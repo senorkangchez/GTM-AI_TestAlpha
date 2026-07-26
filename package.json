@@ -10,7 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "precompute": "tsx scripts/precompute.ts",
-    "grade-rubric": "tsx scripts/grade-rubric.ts",
+    "gen-touches": "tsx scripts/generate-touches.ts",
     "eval": "tsx scripts/eval.ts"
   },
   "dependencies": {

@@ -117,6 +117,49 @@ export interface Divergence {
   reasonChips: string[];
 }
 
+// ---- Touches & progression (the second dial: "how far along") --------------
+// Structured activity, NOT conversations — never run through extraction.
+
+export type TouchChannel = "marketo" | "outreach" | "email" | "gong_call";
+export type TouchDirection = "inbound" | "outbound";
+
+export interface Touch {
+  touch_id: string;
+  account_id: string;
+  opp_id: string | null;
+  channel: TouchChannel; // funnel-stage proxy
+  direction: TouchDirection; // inbound = buyer replied (reciprocity)
+  timestamp: string;
+  summary: string;
+}
+
+export interface ProgressionScore {
+  progression: number; // 0..100 rounded
+  score01: number; // 0..1 unrounded
+  label: "Early" | "Developing" | "Advanced"; // stage-of-relationship, NOT health
+  drivers: Driver[];
+}
+
+// ---- Approval (shadow-DB integrity, human-gated) ---------------------------
+
+export type ApprovalStatus = "pending" | "approved" | "rejected";
+
+/** A suggested MEDDPICC landing — one row of the account "receipt". */
+export interface LandingRow {
+  key: string; // stable approval key (signal_id, or `${account_id}:${field}` when absent)
+  account_id: string;
+  account_name: string;
+  field: MeddpiccField;
+  present: boolean;
+  suggested_value: string; // e.g. "Zendesk" or "evidenced"
+  source: Source | null;
+  timestamp: string | null;
+  value: string; // model restatement
+  evidence_quote: string | null;
+  confidence: number;
+  envelope_id: string | null;
+}
+
 // ---- Org / enrichment ------------------------------------------------------
 
 export interface Enrichment {
@@ -224,8 +267,10 @@ export interface AccountModel {
   territory: string;
   district: string;
   signals: Signal[];
+  touches: Touch[];
   score: Scored;
   scorePrior: Scored; // asOf - 7d, for WoW delta
+  progression: ProgressionScore;
   divergence: Divergence;
   rubric: RubricResult | null;
   processDivergence: ProcessDivergence | null;
