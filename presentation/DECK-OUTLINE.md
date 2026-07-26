@@ -19,12 +19,17 @@ is the system of intelligence — what the field *actually* says.
 
 ## Slide 2 — The problem (why leadership should care)
 
-- The most valuable knowledge in the company — which messaging lands, which
-  competitors show up, where deals are quietly slipping — lives in reps' heads and
-  one-off Slack threads.
-- Today it travels by call notes and QBRs. By the time it reaches marketing,
-  product, and leadership, the deal has moved.
-- Reps shouldn't have to do extra work to share it.
+> **Problem.** Field intelligence is trapped across disparate sources — calls,
+> emails, Slack — and reps won't do the CRM admin to surface it. So the CRM goes
+> stale, no one has a true account 360, and the deals that are quietly rotting look
+> fine on paper. **This system** extracts that intelligence automatically, lands it
+> on the account as *reviewable* CRM updates, and flags where the CRM disagrees with
+> what the field is actually saying.
+
+- The insight — which messaging lands, which competitors show up, where deals are
+  slipping — lives in reps' heads and one-off Slack threads.
+- Today it travels by call notes and QBRs; by the time it reaches marketing, product,
+  and leadership, the deal has moved. Reps shouldn't have to do extra work to share it.
 
 ---
 
@@ -41,8 +46,30 @@ is the system of intelligence — what the field *actually* says.
 
 Visual: the divergence hero card (CRM says Commit / field says soft) + driver chips.
 
-Speaker note: the score never reads the CRM stage — so when they disagree, it's
-real, not circular.
+Two dials make it legible: **Progression 99 (far along) vs Health 29 (unhealthy).**
+The deal is at Commit *because* it's progressed — lots of AE touches — but the buyer
+went quiet and there's no economic buyer. Far along AND rotting.
+
+Speaker note: the health score never reads the CRM stage — so when they disagree, it's
+real, not circular. Progression is directional (funnel depth + two-way engagement, not
+volume), so it can't be gamed by blasting sequences.
+
+---
+
+## Slide 3b — How the intelligence lands (and stays trustworthy)
+
+**Headline: it doesn't just score — it lands on the account as reviewable updates.**
+
+- The account view is a **receipt**: each MEDDPICC field shows the source conversation
+  → the field it populated → the *verbatim quote* that justifies it. That's the answer
+  to "how does scraped data get into the right spots and stay usable."
+- **Nothing auto-writes to the CRM.** Every suggested update is human-gated — Accept or
+  Reject, inline or from a bulk **ops queue**. Approve → "would sync to Salesforce ✓."
+- Answers "aren't you worried the AI corrupts the CRM?" — it can't; every write is
+  reversible and human-approved. And every Accept/Reject is labeled training data.
+
+Visual: the landing-panel receipt with Accept/Reject + the absent "Economic buyer —
+not yet evidenced" row (absence is the story for Northwind).
 
 ---
 

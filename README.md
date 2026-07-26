@@ -1,10 +1,17 @@
 # Field Intelligence System
 
+**Problem.** Field intelligence is trapped across disparate sources — calls, emails,
+Slack — and reps won't do the CRM admin to surface it. So the CRM goes stale, no one has
+a true account 360, and the deals that are quietly rotting look fine on paper. **This
+system** extracts that intelligence automatically, lands it on the account as *reviewable*
+CRM updates, and flags where the CRM disagrees with what the field is actually saying.
+
 A GTM case-study build: **a system of intelligence that sits beside the CRM.** It reads
 what sales hears — Gong calls, emails, Slack — derives evidence-backed signals with one
-real LLM step, then deterministically scores accounts, surfaces where the CRM and the
-field disagree, and routes the insight to whoever can act. Runs as a self-contained demo
-on synthetic data, deployable to a public URL.
+real LLM step, then deterministically scores accounts on **two dials** (Health = how well
+it's going; Progression = how far along), surfaces where the CRM and the field disagree,
+lands each extracted field as a human-approved suggestion, and routes the insight to
+whoever can act. Runs as a self-contained demo on synthetic data, deployable to a public URL.
 
 - **The product isn't a score — it's the divergence.** "CRM says Commit, the field says
   soft," with a traceable reason for every number.
@@ -28,17 +35,21 @@ on synthetic data, deployable to a public URL.
 ## Architecture
 
 ```
-Gong calls / emails / Slack  →  [EXTRACTION AGENT — the one LLM]  →  evidence-quoted signals
-                                                                          │
-        ┌──────────────┬─────────────────┬───────────────┬──────────────┘
-   SCORING+DRIVERS   DIVERGENCE        ROUTER          RUBRIC        (all deterministic)
-                     CRM vs field   reason-coded     leadership
-                                     decisions        grade
-        └──────── DASHBOARD · Slack / Outreach / Marketo / Salesforce / #product / play library
+Gong calls / emails / Slack ─▶ [EXTRACTION AGENT — the one LLM] ─▶ evidence-quoted signals
+Outreach / Marketo / call / email touches ─▶ (structured, NOT extracted)
+        │
+        ▼ (all deterministic)
+   PROGRESSION      HEALTH          DIVERGENCE       ROUTER            RUBRIC
+   "how far along"  "how well"      CRM vs field     reason-coded      leadership grade
+        └── ACCOUNT VIEW: landing receipt (source→field→evidence, Accept/Reject) + two dials
+        └── ROUTER → Slack / Outreach / Marketo / Salesforce / #product / play library
+        └── APPROVAL QUEUE: human-gated suggestions — nothing auto-writes to the CRM
 ```
 
-One LLM agent (extraction). Router and scorer are deterministic on purpose — auditable,
-cheap, reproducible. Synthesis and digest agents are named as roadmap, not built.
+One LLM agent (extraction). Progression, health, router, and rubric are deterministic on
+purpose — auditable, cheap, reproducible. **Two dials that can disagree** (Northwind: far
+along AND unhealthy) are the point. Touches are structured activity and never go through
+the LLM. Synthesis and digest agents are named as roadmap, not built.
 
 ## Buy vs build
 
@@ -71,10 +82,11 @@ demo moments are planted: a divergence deal (Northwind), a cross-deal competitor
 
 ```bash
 npm install
-npm test            # 22 unit tests: scoring, divergence, rollup, router
+npm test            # 27 unit tests: scoring, divergence, rollup, router, progression
 npm run precompute  # regenerate fixtures/signals.precomputed.json
                     #   no ANTHROPIC_API_KEY -> deterministic mock
                     #   with a key in .env.local -> real Anthropic extraction
+npm run gen-touches # regenerate fixtures/touches.json (activity for the progression dial)
 npm run eval        # grade extraction vs the planted answer key (terminal table)
 npm run dev         # http://localhost:3000
 ```
@@ -99,9 +111,11 @@ serverless function; one Haiku call fits the Hobby timeout.
 ## Map
 
 ```
-lib/        types · extraction · mock-extraction · scoring · rollup · router · rubric · data · store · org · format
-app/        (dashboard) territory/account/district/routing/live/how-it-works · api/extract
-components/ ScoreRing · DivergenceHero · DriverBars · ChangeFeed · RoutingTable · WinPlayCard · RubricScorecard · …
-fixtures/   envelopes.json · ground_truth.json · accounts.json · signals.precomputed.json · surveys.json
-scripts/    generate.py · precompute.ts · eval.ts
+lib/        types · extraction · mock-extraction · scoring · progression · rollup · router ·
+            rubric · landing · approvals · data · store · org · format
+app/        (dashboard) territory/account/district/routing/queue/live/how-it-works · api/extract
+components/ ScoreRing · TwoDials · DivergenceHero · DriverBars · LandingPanel · ApprovalControls ·
+            QueueClient · ChangeFeed · RoutingTable · WinPlayCard · RubricScorecard · …
+fixtures/   envelopes · ground_truth · accounts · signals.precomputed · touches · surveys (.json)
+scripts/    generate.py · generate-touches.ts · precompute.ts · eval.ts
 ```

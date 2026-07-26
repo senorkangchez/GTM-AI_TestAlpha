@@ -23,9 +23,12 @@ export default function HowItWorks() {
       <Breadcrumb items={[{ label: "How it works" }]} />
       <h1 className="text-2xl font-bold">How it works</h1>
       <p className="mt-2 text-muted">
-        A system of intelligence that sits <strong>beside</strong> the CRM — not another place to
-        update. Its product isn&apos;t a score; it&apos;s the <strong>disagreement</strong> between
-        what the field says and what the CRM claims, with a traceable reason for every number.
+        <strong>Problem.</strong> Field intelligence is trapped across calls, emails, and Slack, and
+        reps won&apos;t do the CRM admin to surface it — so the CRM goes stale and the deals quietly
+        rotting look fine on paper. This system extracts that intelligence automatically, lands it on
+        the account as <strong>reviewable</strong> CRM updates, and flags where the CRM disagrees with
+        what the field is actually saying. It sits <strong>beside</strong> the CRM, never silently
+        writing to it.
       </p>
 
       <Section title="The flow">
@@ -54,6 +57,29 @@ export default function HowItWorks() {
           plain, unit-tested functions — auditable, cheap, and reproducible. That&apos;s a
           deliberate engineering choice, not a limitation: the parts that decide who gets alerted and
           why should be legible, not a black box.
+        </p>
+      </Section>
+
+      <Section title="Two dials that can disagree">
+        <p>
+          <strong>Health</strong> ("how well it&apos;s going") is the §6 signal score.{" "}
+          <strong>Progression</strong> ("how far along") is a separate, directional activity score
+          from Outreach/Marketo/call/email touches — funnel depth + recency + a reciprocity guardrail
+          (two-way engagement counts; blasting one-way sequences can&apos;t game it). Touches are
+          structured activity and never go through the LLM. Northwind reads{" "}
+          <strong>Progression high, Health low</strong> — far along and rotting — which is exactly the
+          divergence the CRM misses.
+        </p>
+      </Section>
+
+      <Section title="How it lands (and stays trustworthy)">
+        <p>
+          The account view is a <strong>receipt</strong>: each MEDDPICC field shows the source
+          conversation → the field it populated → the verbatim quote behind it. Absent fields are
+          shown greyed — absence is itself signal. <strong>Nothing auto-writes to the CRM.</strong>{" "}
+          Every extracted field is a suggestion a human accepts or rejects — inline on the account, or
+          in bulk from the <strong>approval queue</strong>. Accept flips status and would sync to
+          Salesforce; every decision is also labeled training data for the extraction eval.
         </p>
       </Section>
 

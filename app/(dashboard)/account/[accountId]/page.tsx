@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
-import { getAccount, routingForAccount, listAccounts } from "@/lib/store";
+import Link from "next/link";
+import { getAccount, routingForAccount, listAccounts, getLanding } from "@/lib/store";
 import { orgTitle } from "@/lib/org";
 import { currency } from "@/lib/format";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { ScoreRing } from "@/components/ScoreRing";
+import { TwoDials } from "@/components/TwoDials";
+import { LandingPanel } from "@/components/LandingPanel";
 import { DriverBars } from "@/components/DriverBars";
 import { DivergenceHero } from "@/components/DivergenceHero";
 import { ChangeFeed } from "@/components/ChangeFeed";
@@ -24,6 +26,7 @@ export default async function AccountPage({
   const account = getAccount(accountId);
   if (!account) notFound();
 
+  const landing = getLanding(accountId);
   const routing = routingForAccount(accountId);
   const feedRows = account.signals
     .slice()
@@ -40,25 +43,45 @@ export default async function AccountPage({
         ]}
       />
 
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-        <div>
-          <h1 className="text-2xl font-bold">{account.account_name}</h1>
-          <p className="text-muted text-sm mt-1">
-            CRM stage {account.crm_stage} · {currency(account.deal_amount)} · {account.signals.length} signals
-          </p>
-        </div>
-        <ScoreRing score={account.score} prior={account.scorePrior} />
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold">{account.account_name}</h1>
+        <p className="text-muted text-sm mt-1">
+          CRM stage {account.crm_stage} · {currency(account.deal_amount)} · {account.signals.length}{" "}
+          signals · {account.touches.length} touches
+        </p>
       </div>
 
-      <div className="mb-6">
+      {/* B1 — Landing panel: the receipt (data -> field). The point of the page. */}
+      <section className="mb-8">
+        <h2 className="text-sm font-semibold text-muted mb-3">
+          How the field populated this account — reviewable, evidence-backed
+        </h2>
+        <LandingPanel rows={landing} />
+        <p className="mt-2 text-xs text-muted">
+          Nothing auto-writes to the CRM. Each row is a suggestion a human accepts or rejects; an
+          accept flips status and would sync to Salesforce.
+        </p>
+      </section>
+
+      {/* B2 — two dials, allowed to disagree */}
+      <section className="mb-6">
+        <TwoDials progression={account.progression} health={account.score} />
+      </section>
+
+      {/* B3 — divergence, now explained by the dials above */}
+      <div className="mb-8">
         <DivergenceHero divergence={account.divergence} dealAmount={currency(account.deal_amount)} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <section>
-          <h2 className="text-sm font-semibold text-muted mb-3">Score drivers</h2>
+          <h2 className="text-sm font-semibold text-muted mb-3">Health drivers</h2>
           <div className="card p-4">
             <DriverBars drivers={account.score.drivers} />
+          </div>
+          <h2 className="text-sm font-semibold text-muted mb-3 mt-6">Progression drivers</h2>
+          <div className="card p-4">
+            <DriverBars drivers={account.progression.drivers} />
           </div>
         </section>
         <section>
@@ -111,6 +134,10 @@ export default async function AccountPage({
           <ChangeFeed rows={feedRows} showAccount={false} />
         </div>
       </section>
+
+      <Link href="/queue" className="mt-8 inline-block text-sm text-accent hover:underline">
+        → Review all pending suggestions in the ops queue
+      </Link>
     </div>
   );
 }
