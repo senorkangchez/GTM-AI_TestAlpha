@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Field Intelligence System — Leadership Deck</title>
+<style>
+  :root {
+    --ground: #fbfcfd;
+    --surface: #ffffff;
+    --ink: #0f1722;
+    --muted: #5b6675;
+    --line: #e3e8ee;
+    --accent: #0d9488;
+    --good: #15803d;
+    --bad: #dc2626;
+    --warn: #b45309;
+    --shadow: 0 1px 2px rgba(15,23,34,.06), 0 8px 30px rgba(15,23,34,.06);
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0c111a; --surface: #131b26; --ink: #eaf0f6; --muted: #93a1b2;
+      --line: #223042; --accent: #2dd4bf; --good: #34d399; --bad: #f87171; --warn: #fbbf24;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0c111a; --surface: #131b26; --ink: #eaf0f6; --muted: #93a1b2;
+    --line: #223042; --accent: #2dd4bf; --good: #34d399; --bad: #f87171; --warn: #fbbf24;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"] {
+    --ground: #fbfcfd; --surface: #ffffff; --ink: #0f1722; --muted: #5b6675;
+    --line: #e3e8ee; --accent: #0d9488; --good: #15803d; --bad: #dc2626; --warn: #b45309;
+    --shadow: 0 1px 2px rgba(15,23,34,.06), 0 8px 30px rgba(15,23,34,.06);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--ground); color: var(--ink); font-family: var(--sans);
+    -webkit-font-smoothing: antialiased; overflow: hidden;
+  }
+  .progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); z-index: 40; transition: width .35s ease; }
+
+  .deck { height: 100vh; width: 100vw; position: relative; }
+  .slide {
+    position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center;
+    padding: clamp(28px, 6vw, 96px); opacity: 0; visibility: hidden;
+    transform: translateY(14px); transition: opacity .4s ease, transform .4s ease;
+  }
+  .slide.active { opacity: 1; visibility: visible; transform: none; }
+  .wrap { width: 100%; max-width: 980px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 18px; font-weight: 600;
+  }
+  h1 { font-size: clamp(30px, 5.4vw, 62px); line-height: 1.03; letter-spacing: -.022em; font-weight: 800; margin: 0; text-wrap: balance; }
+  h2 { font-size: clamp(24px, 3.6vw, 40px); line-height: 1.08; letter-spacing: -.018em; font-weight: 800; margin: 0 0 14px; text-wrap: balance; }
+  .lead { font-size: clamp(16px, 1.9vw, 21px); color: var(--muted); line-height: 1.5; margin: 18px 0 0; max-width: 62ch; }
+  p { line-height: 1.55; }
+  strong { color: var(--ink); font-weight: 700; }
+
+  .quote {
+    border-left: 3px solid var(--accent); padding: 6px 0 6px 20px; margin: 8px 0 0;
+    font-size: clamp(18px, 2.3vw, 26px); line-height: 1.4; letter-spacing: -.01em; max-width: 64ch;
+  }
+  .footer-note { position: absolute; left: clamp(28px,6vw,96px); bottom: 30px; font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+
+  .grid { display: grid; gap: 16px; margin-top: 30px; }
+  .g2 { grid-template-columns: repeat(2, 1fr); }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 720px) { .g2, .g3 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px; box-shadow: var(--shadow);
+  }
+  .card .k { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .card .v { font-size: clamp(15px, 1.6vw, 18px); margin-top: 8px; line-height: 1.45; }
+
+  .stat { font-size: clamp(40px, 8vw, 84px); font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; line-height: 1; }
+  .stat.bad { color: var(--bad); } .stat.good { color: var(--good); } .stat.accent { color: var(--accent); }
+  .stat-sub { font-size: 14px; color: var(--muted); margin-top: 10px; }
+
+  .dials { display: flex; gap: clamp(20px, 6vw, 72px); justify-content: center; margin-top: 26px; flex-wrap: wrap; }
+  .dial { text-align: center; }
+  .dial .cap { margin-top: 12px; font-weight: 700; }
+  .dial .sub { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .chip { font-size: 13px; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; color: var(--muted); }
+  .chip.bad { border-color: color-mix(in oklab, var(--bad) 45%, var(--line)); color: var(--bad); }
+
+  .flow { display: flex; align-items: stretch; gap: 10px; flex-wrap: wrap; margin-top: 26px; font-size: 14px; }
+  .flow .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; flex: 1 1 150px; }
+  .flow .box .t { font-weight: 700; margin-bottom: 4px; }
+  .flow .box .d { color: var(--muted); font-size: 12.5px; line-height: 1.4; }
+  .flow .arrow { align-self: center; color: var(--accent); font-weight: 700; }
+  .agent { border-color: var(--accent) !important; box-shadow: 0 0 0 1px var(--accent) inset; }
+
+  ul.clean { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+  ul.clean li { display: flex; gap: 12px; align-items: flex-start; font-size: clamp(15px,1.7vw,18px); line-height: 1.45; }
+  ul.clean li::before { content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-radius: 3px; background: var(--accent); margin-top: 8px; }
+  ul.clean li.bad::before { background: var(--bad); } ul.clean li.good::before { background: var(--good); }
+
+  .reason { font-family: var(--mono); font-size: 12px; color: var(--muted); background: color-mix(in oklab, var(--accent) 8%, transparent); border-radius: 6px; padding: 2px 6px; }
+
+  /* nav */
+  .nav { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 9px; z-index: 40; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); border: 0; padding: 0; cursor: pointer; transition: background .2s, transform .2s; }
+  .dot.on { background: var(--accent); transform: scale(1.35); }
+  .counter { position: fixed; bottom: 22px; right: 26px; font-family: var(--mono); font-size: 12px; color: var(--muted); z-index: 40; font-variant-numeric: tabular-nums; }
+  .hint { position: fixed; bottom: 22px; left: 26px; font-family: var(--mono); font-size: 11px; color: var(--muted); z-index: 40; letter-spacing: .05em; }
+  .arrows { position: fixed; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; width: 100%; justify-content: space-between; pointer-events: none; padding: 0 10px; }
+  .arrows button { pointer-events: auto; background: transparent; border: 0; color: var(--muted); font-size: 30px; cursor: pointer; opacity: .5; transition: opacity .2s; }
+  .arrows button:hover { opacity: 1; color: var(--accent); }
+  .toggle { position: fixed; top: 16px; right: 20px; z-index: 40; font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; background: var(--surface); border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slide { transition: opacity .01s; transform: none; }
+    .progress { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <button class="toggle" id="toggle" aria-label="Toggle theme">Theme</button>
+
+  <div class="deck" id="deck">
+
+    <!-- 1 — Title -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">GTM AI Engineer · Case Study</p>
+        <h1>The truth is in the field.<br>We move it — automatically.</h1>
+        <p class="lead">A system of intelligence that sits <strong>beside</strong> the CRM — reading what sales hears on calls, emails, and Slack, and carrying it to whoever can act, in real time.</p>
+      </div>
+      <div class="footer-note">Field Intelligence System · working demo on synthetic data</div>
+    </section>
+
+    <!-- 2 — Problem -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">The problem</p>
+        <blockquote class="quote">Field intelligence is trapped across calls, emails, and Slack — and reps won't do the CRM admin to surface it. So the CRM goes stale, no one has a true account 360, and the deals quietly rotting <strong>look fine on paper</strong>.</blockquote>
+        <p class="lead">By the time that insight reaches marketing, product, and leadership through call notes and QBRs, the deal has already moved. Reps shouldn't have to do extra work to share it.</p>
+      </div>
+    </section>
+
+    <!-- 3 — First move -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">Where we start · and why it comes first</p>
+        <h2>De-risk the one hard thing: trustworthy extraction.</h2>
+        <p class="lead">Everything downstream — scoring, divergence, routing — is only as good as the step that turns a messy conversation into a specific field on a specific account. So that's the first and only thing we make genuinely hard-tested.</p>
+        <div class="grid g3">
+          <div class="card"><div class="k">The guardrail</div><div class="v">Every extracted signal must quote the transcript <strong>verbatim</strong>, or it's dropped — checked in code, not trusted to the model.</div></div>
+          <div class="card"><div class="k">Measured</div><div class="v">We planted a hidden answer key in the data, so we can grade extraction field-by-field: <strong>90%</strong> accuracy.</div></div>
+          <div class="card"><div class="k">Everything else</div><div class="v">Deterministic, testable code — auditable and cheap. Not a black box.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 — Architecture -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">The architecture · buy the stack, build the middle</p>
+        <h2>One agent extracts. Everything else is deterministic.</h2>
+        <div class="flow">
+          <div class="box"><div class="t">Capture (buy)</div><div class="d">Gong, email, Slack, Outreach, Marketo</div></div>
+          <div class="arrow">→</div>
+          <div class="box agent"><div class="t">Extraction agent</div><div class="d">the one LLM · conversation → evidence-quoted signals</div></div>
+          <div class="arrow">→</div>
+          <div class="box"><div class="t">Intelligence (build)</div><div class="d">score · divergence · progression · route · rubric</div></div>
+          <div class="arrow">→</div>
+          <div class="box"><div class="t">Act (buy)</div><div class="d">Slack · Outreach · Marketo · Salesforce · #product</div></div>
+        </div>
+        <p class="lead"><strong>Triggers:</strong> a ~5-minute batch as new conversations land — minutes, not seconds, is the right latency for GTM. <strong>Lands as:</strong> reviewable suggestions and reason-coded nudges. It reads CRM stage; it never silently writes a field.</p>
+      </div>
+    </section>
+
+    <!-- 5 — ACT I -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">Act I · Protect revenue</p>
+        <h2>$1.03M of late-stage pipeline is quietly diverging.</h2>
+        <div class="grid g2">
+          <div class="card">
+            <div class="k">The hero</div>
+            <div class="stat bad" style="margin-top:12px;">Northwind</div>
+            <div class="v"><strong>$480K</strong> deal marked <strong>Commit</strong> in Salesforce. The field scores it <strong>at-risk (29/100)</strong> — no economic buyer anywhere, Zendesk rising across the last three calls, champion going quiet.</div>
+          </div>
+          <div class="card">
+            <div class="k">Why it matters</div>
+            <div class="v">The forecast says this is closing. The field says it isn't. We surface that gap <strong>weeks before it slips</strong> — with the exact quotes behind every driver.</div>
+            <div class="chips"><span class="chip bad">economic buyer missing</span><span class="chip bad">Zendesk rising · 8d</span><span class="chip bad">champion quiet</span></div>
+          </div>
+        </div>
+        <p class="lead">The health score never reads the CRM stage — so when they disagree, it's real, not circular.</p>
+      </div>
+    </section>
+
+    <!-- 6 — Two dials -->
+    <section class="slide">
+      <div class="wrap" style="text-align:center;">
+        <p class="eyebrow">Two dials that are allowed to disagree</p>
+        <h2>Far along <em>and</em> rotting.</h2>
+        <div class="dials">
+          <div class="dial">
+            <svg width="180" height="180" viewBox="0 0 180 180" aria-label="Progression 99">
+              <circle cx="90" cy="90" r="78" fill="none" stroke="var(--line)" stroke-width="14"/>
+              <circle cx="90" cy="90" r="78" fill="none" stroke="var(--accent)" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="490" stroke-dashoffset="4.9" transform="rotate(-90 90 90)"/>
+              <text x="90" y="90" text-anchor="middle" dominant-baseline="central" font-size="46" font-weight="800" fill="var(--ink)" font-family="ui-sans-serif, system-ui, sans-serif">99</text>
+            </svg>
+            <div class="cap" style="color:var(--accent)">Progression · Advanced</div>
+            <div class="sub">how far along</div>
+          </div>
+          <div class="dial">
+            <svg width="180" height="180" viewBox="0 0 180 180" aria-label="Health 29">
+              <circle cx="90" cy="90" r="78" fill="none" stroke="var(--line)" stroke-width="14"/>
+              <circle cx="90" cy="90" r="78" fill="none" stroke="var(--bad)" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="490" stroke-dashoffset="348" transform="rotate(-90 90 90)"/>
+              <text x="90" y="90" text-anchor="middle" dominant-baseline="central" font-size="46" font-weight="800" fill="var(--ink)" font-family="ui-sans-serif, system-ui, sans-serif">29</text>
+            </svg>
+            <div class="cap" style="color:var(--bad)">Health · At-risk</div>
+            <div class="sub">how well it's going</div>
+          </div>
+        </div>
+        <p class="lead" style="margin-left:auto;margin-right:auto;">Progression is directional — funnel depth + two-way engagement, not raw activity — so it can't be gamed by blasting sequences. When the dials split, that gap is the story the CRM misses.</p>
+      </div>
+    </section>
+
+    <!-- 7 — How it lands -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">How the intelligence lands · and stays trustworthy</p>
+        <h2>It doesn't just score. It lands on the account — reviewably.</h2>
+        <div class="grid g2">
+          <div class="card"><div class="k">The receipt</div><div class="v">Each field shows the <strong>source conversation → the field it populated → the verbatim quote</strong> behind it. That's how scraped data gets into the right spot and stays usable. Absent fields show greyed — absence is signal.</div></div>
+          <div class="card"><div class="k">Human-gated</div><div class="v"><strong>Nothing auto-writes to the CRM.</strong> Every suggestion is Accept / Reject — inline or from a bulk ops queue. Approve → "would sync to Salesforce ✓." Every decision is labeled training data.</div></div>
+        </div>
+        <p class="lead">Answers the first question ops asks — "aren't you worried the AI corrupts the CRM?" It can't; every write is reversible and human-approved.</p>
+      </div>
+    </section>
+
+    <!-- 8 — ACT II -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">Act II · Lift win rates for everyone</p>
+        <h2>One rep's winning play, pushed to every open deal that needs it.</h2>
+        <div class="grid g2">
+          <div class="card"><div class="k">Detected pattern</div><div class="v"><strong>3 wins vs Zendesk</strong> with the same move — a zero-downtime <em>migration story</em>. The system spotted it from the reps' own words.</div></div>
+          <div class="card"><div class="k">Propagated</div><div class="v">Drafts a battlecard and — on one approval — pushes it to the <strong>5 open Zendesk deals</strong> still in flight. Not a QBR three weeks later.</div></div>
+        </div>
+        <p class="lead">"The insight that helped one rep win reaches every rep" — the literal ask of the brief, made automatic. A single competitor cluster fires the play; a single mention stays logged (no spam).</p>
+      </div>
+    </section>
+
+    <!-- 9 — ACT III -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">Act III · Zero rep effort</p>
+        <h2>Reps do nothing extra. The system reads what already happens.</h2>
+        <ul class="clean">
+          <li>Leadership defines what "qualified" means; every deal is graded against that rubric <strong>from the field</strong>, with evidence — no forms, no self-reporting.</li>
+          <li>Runs on a ~5-minute batch, so intelligence reaches the right team while it's still actionable.</li>
+          <li><strong>151 signals</strong> extracted this window; <strong>11</strong> high-value actions routed; the rest logged. Clustering + an alert-fatigue governor keep it from becoming noise.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 10 — Why trust it + honest split -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">Why you can trust it · and what's real in this demo</p>
+        <h2>Built for the failure modes, not the happy path.</h2>
+        <div class="grid g2">
+          <div class="card"><div class="k">Failure modes designed for</div><div class="v">Hallucination → verbatim-quote guardrail. Alert fatigue → clustering + recipient caps. False divergence → confidence + evidence required. Staleness → recency decay. Black box → reason codes everywhere.</div></div>
+          <div class="card"><div class="k">The honest demo split</div><div class="v">Data is synthetic. The extraction agent is <strong>production-shaped and runs live on demand</strong> (the Live-extract tab). For this walkthrough the committed signals come from a deterministic stand-in with the <strong>identical</strong> guardrail — swap in a key and it's live, nothing downstream changes.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 — Business impact -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">What it changes for the business</p>
+        <h2>A forecast you can trust, and the best rep's play as everyone's.</h2>
+        <div class="grid g3">
+          <div class="card"><div class="stat bad">$1.03M</div><div class="stat-sub">late-stage pipeline surfaced as diverging — before the slip, not after</div></div>
+          <div class="card"><div class="stat accent">5 deals</div><div class="stat-sub">get the winning Zendesk play the same week, not next quarter</div></div>
+          <div class="card"><div class="stat good">0</div><div class="stat-sub">extra minutes of rep admin — it reads what already happens</div></div>
+        </div>
+        <p class="lead"><em>Illustrative model, not a demo number:</em> on ~$5M of competitive pipeline, a 3-point win-rate lift is ~$150K/quarter — before counting the Commit-stage deals we stop losing silently.</p>
+      </div>
+    </section>
+
+    <!-- 12 — Roadmap + close -->
+    <section class="slide">
+      <div class="wrap">
+        <p class="eyebrow">What's next · shipped the risky thing first</p>
+        <h2>Roadmap</h2>
+        <div class="grid g2">
+          <div class="card"><div class="k">Near-term</div><div class="v">
+            • Salesforce write-back preview (read stage / write task)<br>
+            • Persist approvals + feed Accept/Reject into the extraction eval as labeled data — the quality flywheel<br>
+            • Event-driven triggers (Gong/Slack webhooks) for true real-time<br>
+            • Tune the progression dial + connect real Outreach/Marketo activity
+          </div></div>
+          <div class="card"><div class="k">Then</div><div class="v">
+            • Synthesis agent — drafts the battlecard from a cluster<br>
+            • Weekly leadership digest agent<br>
+            • Self-serve rubric authoring for leadership<br>
+            • Territory/role access control on sensitive transcripts
+          </div></div>
+        </div>
+        <p class="lead"><strong>The ask:</strong> connect one real Gong workspace, read-only, and run it live on one segment. The demo is clickable now — divergence, propagation, live extraction, the eval.</p>
+      </div>
+      <div class="footer-note">Thank you · questions welcome</div>
+    </section>
+
+  </div>
+
+  <div class="arrows"><button id="prev" aria-label="Previous slide">‹</button><button id="next" aria-label="Next slide">›</button></div>
+  <nav class="nav" id="nav" aria-label="Slides"></nav>
+  <div class="counter" id="counter"></div>
+  <div class="hint">← → or space to navigate</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const nav = document.getElementById('nav');
+  const counter = document.getElementById('counter');
+  const progress = document.getElementById('progress');
+  let i = 0;
+
+  slides.forEach((_, n) => {
+    const b = document.createElement('button');
+    b.className = 'dot'; b.setAttribute('aria-label', 'Go to slide ' + (n + 1));
+    b.addEventListener('click', () => go(n));
+    nav.appendChild(b);
+  });
+  const dots = Array.from(nav.children);
+
+  function go(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    dots.forEach((d, k) => d.classList.toggle('on', k === i));
+    counter.textContent = String(i + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
+  }
+  document.getElementById('next').addEventListener('click', () => go(i + 1));
+  document.getElementById('prev').addEventListener('click', () => go(i - 1));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(i - 1); }
+    else if (e.key === 'Home') go(0);
+    else if (e.key === 'End') go(slides.length - 1);
+  });
+
+  // theme toggle (stamps data-theme so it overrides the media query both ways)
+  const root = document.documentElement;
+  document.getElementById('toggle').addEventListener('click', () => {
+    const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const cur = root.getAttribute('data-theme') || (dark ? 'dark' : 'light');
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+  });
+
+  const start = parseInt((location.hash || '').slice(1), 10);
+  go(Number.isFinite(start) && start >= 1 ? start - 1 : 0);
+</script>
+</body>
+</html>

@@ -26,6 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <Link href="/queue" className="hover:text-foreground">Queue</Link>
               <Link href="/live" className="hover:text-foreground">Live extract</Link>
               <Link href="/how-it-works" className="hover:text-foreground">How it works</Link>
+              <a href="/deck.html" target="_blank" rel="noopener" className="hover:text-foreground">Deck ↗</a>
               <span
                 title={`Extraction mode: ${meta.mode}`}
                 className={
