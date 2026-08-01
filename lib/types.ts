@@ -29,7 +29,8 @@ export type SignalType =
   | "competitor"
   | "objection"
   | "win_play"
-  | "engagement";
+  | "engagement"
+  | "feature_request"; // product signal — `entity` = the requested feature
 
 /** The 8 MEDDPICC elements. `field` on a meddpicc signal is one of these. */
 export type MeddpiccField =
@@ -140,33 +141,90 @@ export interface ProgressionScore {
   drivers: Driver[];
 }
 
-// ---- Approval (shadow-DB integrity, human-gated) ---------------------------
+// ---- The 600-opp analytics book (v3, structured — never runs through the LLM) --
+// The macro views (KPIs, heatmaps, break-outs, digest) roll up from these. Only
+// the ~30 rows with has_conversations feed the extraction agent / scored account.
 
-export type ApprovalStatus = "pending" | "approved" | "rejected";
+export type Segment = "mid-market" | "enterprise" | "smb";
+export type Team = "West" | "East" | "Central";
+export type Outcome = "won" | "lost" | "open";
 
-/** A suggested MEDDPICC landing — one row of the account "receipt". */
-export interface LandingRow {
-  key: string; // stable approval key (signal_id, or `${account_id}:${field}` when absent)
+/** One opportunity row from fixtures/ground_truth.json (600 of them). */
+export interface Opp {
+  account: string;
   account_id: string;
-  account_name: string;
-  field: MeddpiccField;
-  present: boolean;
-  suggested_value: string; // e.g. "Zendesk" or "evidenced"
-  source: Source | null;
-  timestamp: string | null;
-  value: string; // model restatement
-  evidence_quote: string | null;
-  confidence: number;
-  envelope_id: string | null;
+  opp_id: string;
+  crm_stage: string;
+  meddpicc_present: MeddpiccField[];
+  meddpicc_absent: MeddpiccField[];
+  competitor: string | null;
+  trajectory: string;
+  has_win_play: boolean;
+  segment: Segment;
+  team: Team;
+  territory: string; // label, e.g. "Mid-Market West"
+  district: string; // label, e.g. "West District"
+  outcome: Outcome;
+  signal_treated: boolean;
+  product_lines: string[];
+  feature_requests: string[];
+  has_conversations: boolean;
+  deal_amount: number;
 }
 
-// ---- Org / enrichment ------------------------------------------------------
+// ---- Marketing campaigns + enrollments (fixtures/campaigns.json) -----------
 
-export interface Enrichment {
-  account_name: string;
-  deal_amount: number;
-  territory: string;
-  district: string;
+export interface Campaign {
+  campaign_id: string;
+  name: string;
+  track: "competitor" | "feature" | "batch" | "segment";
+  target_entity: string | null;
+}
+
+export interface Enrollment {
+  enrollment_id: string;
+  opp_id: string;
+  account_id: string;
+  team: Team;
+  segment: Segment;
+  campaign_id: string;
+  triggered_by: "signal" | "manual";
+  enrolled_at: string;
+  converted: boolean;
+}
+
+export interface CampaignsFile {
+  campaigns: Campaign[];
+  enrollments: Enrollment[];
+}
+
+// ---- Heatmaps (precomputed, fixtures/heatmaps.json) ------------------------
+
+export type HeatmapGridKey = "product_competitor" | "campaign_segment" | "product_campaign";
+
+/** One cell: win rate (null when n<MIN_N so the UI greys it), n closed, gap-cited losses. */
+export interface HeatmapCell {
+  rate: number | null;
+  n: number;
+  gap_losses: number;
+}
+
+export interface HeatmapView {
+  n_opps: number;
+  product_competitor: Record<string, HeatmapCell>; // keyed "row|col"
+  campaign_segment: Record<string, HeatmapCell>;
+  product_campaign: Record<string, HeatmapCell>;
+}
+
+export interface Heatmaps {
+  axes: Record<HeatmapGridKey, { rows: string[]; cols: string[] }>;
+  geo: {
+    districts: string[];
+    territories: string[];
+    territory_to_district: Record<string, string>;
+  };
+  min_n: number;
+  views: Record<string, HeatmapView>; // scope label ("All" | district | territory) -> view
 }
 
 // ---- Router ----------------------------------------------------------------
@@ -264,8 +322,10 @@ export interface AccountModel {
   opp_id: string | null;
   crm_stage: string;
   deal_amount: number;
-  territory: string;
-  district: string;
+  territory: string; // geo slug, e.g. "mid-market-west"
+  district: string; // geo slug, e.g. "west-district"
+  segment: Segment;
+  team: Team;
   signals: Signal[];
   touches: Touch[];
   score: Scored;
@@ -286,12 +346,16 @@ export interface ProcessDivergence {
 }
 
 export interface GroupRollup {
-  id: string;
-  name: string;
+  id: string; // geo slug
+  name: string; // geo label
   level: "territory" | "district";
-  score: Scored;
-  dealValue: number;
+  score: Scored; // health, from scored (has_conversations) accounts in scope
+  dealValue: number; // Σ deal_amount of scored accounts in scope
   divergingPipeline: number; // Σ deal_amount of flagged accounts
   flaggedAccounts: { account_id: string; account_name: string; gap: number }[];
   childIds: string[];
+  // ---- macro fields, from the full 600-opp book in scope (not just scored) ----
+  oppCount: number;
+  winRate: number | null; // % of closed opps won; null when <5 closed
+  pipeline: number; // Σ deal_amount of all opps in scope
 }

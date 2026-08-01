@@ -1,14 +1,15 @@
 {
   "mode": "mock",
   "model": "deterministic-mock",
-  "envelopes": 46,
-  "signals": 151,
+  "envelopes": 100,
+  "signals": 404,
   "by_type": {
-    "meddpicc": 78,
-    "competitor": 31,
-    "engagement": 30,
-    "objection": 9,
+    "meddpicc": 202,
+    "competitor": 84,
+    "engagement": 67,
+    "feature_request": 16,
+    "objection": 32,
     "win_play": 3
   },
-  "envelopes_with_zero_signals": 2
+  "envelopes_with_zero_signals": 1
 }

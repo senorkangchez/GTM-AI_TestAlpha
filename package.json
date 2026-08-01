@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "precompute": "tsx scripts/precompute.ts",
-    "gen-touches": "tsx scripts/generate-touches.ts",
+    "gen": "python3 scripts/generate.py && python3 scripts/heatmaps.py",
+    "heatmaps": "python3 scripts/heatmaps.py",
     "eval": "tsx scripts/eval.ts"
   },
   "dependencies": {

@@ -78,5 +78,10 @@ export function buildGroupRollup(
       .map((a) => ({ account_id: a.account_id, account_name: a.account_name, gap: a.divergence.gap }))
       .sort((a, b) => b.gap - a.gap),
     childIds: accounts.map((a) => a.account_id),
+    // Macro fields default here (scored-account view); lib/data.ts overrides them
+    // with full 600-opp-book numbers via spread.
+    oppCount: accounts.length,
+    winRate: null,
+    pipeline: dealValue,
   };
 }

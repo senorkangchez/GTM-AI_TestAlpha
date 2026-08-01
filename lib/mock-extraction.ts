@@ -94,6 +94,35 @@ function mockRawSignals(env: SignalEnvelope): RawSignal[] {
     });
   }
 
+  // Feature request (product signal). One line yields THREE signals:
+  // feature_request (entity = the feature) + competitor + a buying blocker.
+  const feat = t.match(
+    /we'd really need (.+?) before we could roll this out company-wide\. Honestly (.+?) already has that, so it's a real gap for us right now\./,
+  );
+  if (feat) {
+    add({
+      signal_type: "feature_request",
+      entity: feat[1],
+      value: `Buyer needs ${feat[1]} before company-wide rollout.`,
+      evidence_quote: feat[0],
+      confidence: 0.9,
+    });
+    if (!/the tool we're comparing/.test(feat[2]))
+      add({
+        signal_type: "competitor",
+        entity: feat[2],
+        value: `${feat[2]} already ships ${feat[1]} — cited as a gap.`,
+        evidence_quote: feat[0],
+        confidence: 0.85,
+      });
+    add({
+      signal_type: "objection",
+      value: `Missing ${feat[1]} is a blocker to company-wide rollout.`,
+      evidence_quote: feat[0],
+      confidence: 0.82,
+    });
+  }
+
   // --- Engagement cues ---
   const cooling = firstMatch(
     t,

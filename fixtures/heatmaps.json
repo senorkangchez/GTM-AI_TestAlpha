@@ -1,0 +1,3386 @@
+{
+ "axes": {
+  "product_competitor": {
+   "rows": [
+    "Support Cloud",
+    "Messaging",
+    "Analytics",
+    "Self-Service Portal"
+   ],
+   "cols": [
+    "Zendesk",
+    "Zoho",
+    "Intercom",
+    "HubSpot",
+    "an internal build",
+    "no competitor"
+   ]
+  },
+  "campaign_segment": {
+   "rows": [
+    "Zendesk Displacement - Integrations",
+    "Integrations Expansion - Slack",
+    "Q3 Product Newsletter",
+    "Support Cloud Webinar Series",
+    "no campaign"
+   ],
+   "cols": [
+    "mid-market",
+    "enterprise",
+    "smb"
+   ]
+  },
+  "product_campaign": {
+   "rows": [
+    "Support Cloud",
+    "Messaging",
+    "Analytics",
+    "Self-Service Portal"
+   ],
+   "cols": [
+    "Zendesk Displacement - Integrations",
+    "Integrations Expansion - Slack",
+    "Q3 Product Newsletter",
+    "Support Cloud Webinar Series",
+    "no campaign"
+   ]
+  }
+ },
+ "geo": {
+  "districts": [
+   "Central District",
+   "East District",
+   "West District"
+  ],
+  "territories": [
+   "Enterprise Central",
+   "Enterprise East",
+   "Enterprise North",
+   "Mid-Market Atlantic",
+   "Mid-Market Plains",
+   "Mid-Market West",
+   "SMB Pacific"
+  ],
+  "territory_to_district": {
+   "Mid-Market West": "West District",
+   "Mid-Market Atlantic": "East District",
+   "Mid-Market Plains": "Central District",
+   "Enterprise Central": "Central District",
+   "Enterprise North": "West District",
+   "SMB Pacific": "West District",
+   "Enterprise East": "East District"
+  }
+ },
+ "min_n": 5,
+ "views": {
+  "All": {
+   "n_opps": 600,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 45,
+     "n": 51,
+     "gap_losses": 13
+    },
+    "Support Cloud|Zoho": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Support Cloud|Intercom": {
+     "rate": 67,
+     "n": 15,
+     "gap_losses": 3
+    },
+    "Support Cloud|HubSpot": {
+     "rate": 73,
+     "n": 15,
+     "gap_losses": 2
+    },
+    "Support Cloud|an internal build": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 1
+    },
+    "Support Cloud|no competitor": {
+     "rate": 64,
+     "n": 14,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 35,
+     "n": 46,
+     "gap_losses": 14
+    },
+    "Messaging|Zoho": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Messaging|Intercom": {
+     "rate": 60,
+     "n": 15,
+     "gap_losses": 1
+    },
+    "Messaging|HubSpot": {
+     "rate": 45,
+     "n": 11,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": 36,
+     "n": 14,
+     "gap_losses": 2
+    },
+    "Messaging|no competitor": {
+     "rate": 67,
+     "n": 12,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk": {
+     "rate": 41,
+     "n": 58,
+     "gap_losses": 15
+    },
+    "Analytics|Zoho": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 3
+    },
+    "Analytics|Intercom": {
+     "rate": 67,
+     "n": 21,
+     "gap_losses": 3
+    },
+    "Analytics|HubSpot": {
+     "rate": 64,
+     "n": 14,
+     "gap_losses": 3
+    },
+    "Analytics|an internal build": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 2
+    },
+    "Analytics|no competitor": {
+     "rate": 59,
+     "n": 17,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 37,
+     "n": 46,
+     "gap_losses": 17
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": 50,
+     "n": 12,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": 38,
+     "n": 13,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": 62,
+     "n": 13,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": 62,
+     "n": 13,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": 44,
+     "n": 16,
+     "gap_losses": 3
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 53,
+     "n": 32,
+     "gap_losses": 11
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 52,
+     "n": 25,
+     "gap_losses": 5
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 54,
+     "n": 26,
+     "gap_losses": 6
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": 58,
+     "n": 24,
+     "gap_losses": 10
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": 47,
+     "n": 15,
+     "gap_losses": 8
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": 47,
+     "n": 15,
+     "gap_losses": 8
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 56,
+     "n": 63,
+     "gap_losses": 14
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 53,
+     "n": 62,
+     "gap_losses": 13
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 40,
+     "n": 55,
+     "gap_losses": 14
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 58,
+     "n": 62,
+     "gap_losses": 13
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 49,
+     "n": 61,
+     "gap_losses": 15
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 50,
+     "n": 60,
+     "gap_losses": 10
+    },
+    "no campaign|mid-market": {
+     "rate": 67,
+     "n": 9,
+     "gap_losses": 1
+    },
+    "no campaign|enterprise": {
+     "rate": 29,
+     "n": 14,
+     "gap_losses": 2
+    },
+    "no campaign|smb": {
+     "rate": 55,
+     "n": 20,
+     "gap_losses": 4
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 63,
+     "n": 30,
+     "gap_losses": 7
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": 61,
+     "n": 18,
+     "gap_losses": 7
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 55,
+     "n": 66,
+     "gap_losses": 9
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 60,
+     "n": 62,
+     "gap_losses": 11
+    },
+    "Support Cloud|no campaign": {
+     "rate": 52,
+     "n": 21,
+     "gap_losses": 2
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": 39,
+     "n": 28,
+     "gap_losses": 8
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": 57,
+     "n": 21,
+     "gap_losses": 9
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 41,
+     "n": 56,
+     "gap_losses": 12
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 49,
+     "n": 73,
+     "gap_losses": 14
+    },
+    "Messaging|no campaign": {
+     "rate": 40,
+     "n": 15,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 56,
+     "n": 34,
+     "gap_losses": 6
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": 53,
+     "n": 19,
+     "gap_losses": 9
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 52,
+     "n": 80,
+     "gap_losses": 19
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 46,
+     "n": 79,
+     "gap_losses": 20
+    },
+    "Analytics|no campaign": {
+     "rate": 50,
+     "n": 18,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 41,
+     "n": 32,
+     "gap_losses": 12
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": 41,
+     "n": 22,
+     "gap_losses": 13
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 46,
+     "n": 68,
+     "gap_losses": 22
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 70,
+     "gap_losses": 14
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": 47,
+     "n": 17,
+     "gap_losses": 3
+    }
+   }
+  },
+  "Central District": {
+   "n_opps": 193,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 32,
+     "n": 19,
+     "gap_losses": 8
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 19,
+     "n": 16,
+     "gap_losses": 7
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": 83,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 33,
+     "n": 18,
+     "gap_losses": 4
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": 100,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Analytics|no competitor": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 39,
+     "n": 18,
+     "gap_losses": 9
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": 20,
+     "n": 5,
+     "gap_losses": 2
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 36,
+     "n": 11,
+     "gap_losses": 7
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 33,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 4
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": 25,
+     "n": 8,
+     "gap_losses": 6
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 4
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": 20,
+     "n": 5,
+     "gap_losses": 4
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 39,
+     "n": 18,
+     "gap_losses": 7
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 52,
+     "n": 23,
+     "gap_losses": 5
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 40,
+     "n": 20,
+     "gap_losses": 5
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 50,
+     "n": 18,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 40,
+     "n": 20,
+     "gap_losses": 6
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 60,
+     "n": 20,
+     "gap_losses": 2
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "no campaign|enterprise": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "no campaign|smb": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 33,
+     "n": 12,
+     "gap_losses": 5
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 4
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 42,
+     "n": 24,
+     "gap_losses": 6
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 48,
+     "n": 21,
+     "gap_losses": 3
+    },
+    "Support Cloud|no campaign": {
+     "rate": 33,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": 25,
+     "n": 12,
+     "gap_losses": 5
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 5
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 26,
+     "n": 19,
+     "gap_losses": 5
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 18,
+     "gap_losses": 4
+    },
+    "Messaging|no campaign": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 38,
+     "n": 13,
+     "gap_losses": 4
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": 50,
+     "n": 10,
+     "gap_losses": 5
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 56,
+     "n": 25,
+     "gap_losses": 6
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 48,
+     "n": 29,
+     "gap_losses": 6
+    },
+    "Analytics|no campaign": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 6
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": 12,
+     "n": 8,
+     "gap_losses": 7
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 48,
+     "n": 21,
+     "gap_losses": 9
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 45,
+     "n": 20,
+     "gap_losses": 6
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": 20,
+     "n": 5,
+     "gap_losses": 2
+    }
+   }
+  },
+  "East District": {
+   "n_opps": 174,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 2
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|Intercom": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Support Cloud|HubSpot": {
+     "rate": 100,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Support Cloud|no competitor": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 1
+    },
+    "Messaging|Zoho": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Messaging|no competitor": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk": {
+     "rate": 38,
+     "n": 16,
+     "gap_losses": 3
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": 83,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": 57,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 31,
+     "n": 13,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": 100,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 60,
+     "n": 20,
+     "gap_losses": 3
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 52,
+     "n": 21,
+     "gap_losses": 5
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 53,
+     "n": 15,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 53,
+     "n": 19,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 57,
+     "n": 21,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 53,
+     "n": 17,
+     "gap_losses": 2
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 1
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 64,
+     "n": 22,
+     "gap_losses": 2
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 56,
+     "n": 16,
+     "gap_losses": 4
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 1
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 16,
+     "gap_losses": 2
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 26,
+     "gap_losses": 5
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 0
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 24,
+     "gap_losses": 3
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 52,
+     "n": 21,
+     "gap_losses": 2
+    },
+    "Analytics|no campaign": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 33,
+     "n": 9,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 52,
+     "n": 21,
+     "gap_losses": 6
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 57,
+     "n": 23,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 1
+    }
+   }
+  },
+  "West District": {
+   "n_opps": 233,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 60,
+     "n": 20,
+     "gap_losses": 3
+    },
+    "Support Cloud|Zoho": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Support Cloud|Intercom": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 2
+    },
+    "Support Cloud|HubSpot": {
+     "rate": 83,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 44,
+     "n": 18,
+     "gap_losses": 6
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 50,
+     "n": 24,
+     "gap_losses": 8
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 3
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 40,
+     "n": 15,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": 14,
+     "n": 7,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 1
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 69,
+     "n": 16,
+     "gap_losses": 4
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 75,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 4
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 64,
+     "n": 25,
+     "gap_losses": 4
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 56,
+     "n": 18,
+     "gap_losses": 3
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 30,
+     "n": 20,
+     "gap_losses": 8
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 68,
+     "n": 25,
+     "gap_losses": 5
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 50,
+     "n": 20,
+     "gap_losses": 5
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 39,
+     "n": 23,
+     "gap_losses": 6
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 2
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 91,
+     "n": 11,
+     "gap_losses": 1
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 3
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 60,
+     "n": 20,
+     "gap_losses": 1
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 72,
+     "n": 25,
+     "gap_losses": 4
+    },
+    "Support Cloud|no campaign": {
+     "rate": 67,
+     "n": 9,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 48,
+     "n": 21,
+     "gap_losses": 5
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 48,
+     "n": 29,
+     "gap_losses": 5
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 75,
+     "n": 12,
+     "gap_losses": 2
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 3
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 52,
+     "n": 31,
+     "gap_losses": 10
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 38,
+     "n": 29,
+     "gap_losses": 12
+    },
+    "Analytics|no campaign": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 45,
+     "n": 11,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 38,
+     "n": 26,
+     "gap_losses": 7
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 48,
+     "n": 27,
+     "gap_losses": 5
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    }
+   }
+  },
+  "Enterprise Central": {
+   "n_opps": 90,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 22,
+     "n": 9,
+     "gap_losses": 4
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 18,
+     "n": 11,
+     "gap_losses": 4
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 0,
+     "n": 9,
+     "gap_losses": 4
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 5
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 20,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 29,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 4
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 3
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 5
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 36,
+     "n": 11,
+     "gap_losses": 4
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 31,
+     "n": 13,
+     "gap_losses": 2
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 44,
+     "n": 9,
+     "gap_losses": 3
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "no campaign|smb": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 3
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 2
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 40,
+     "n": 15,
+     "gap_losses": 5
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 25,
+     "n": 8,
+     "gap_losses": 2
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": 22,
+     "n": 9,
+     "gap_losses": 3
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 3
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 21,
+     "n": 14,
+     "gap_losses": 4
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 3
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 0,
+     "n": 7,
+     "gap_losses": 4
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 5
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 38,
+     "n": 13,
+     "gap_losses": 4
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 40,
+     "n": 15,
+     "gap_losses": 5
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 46,
+     "n": 13,
+     "gap_losses": 5
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    }
+   }
+  },
+  "Enterprise East": {
+   "n_opps": 90,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 1
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 57,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 50,
+     "n": 12,
+     "gap_losses": 3
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 75,
+     "n": 12,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 1
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 45,
+     "n": 11,
+     "gap_losses": 2
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 54,
+     "n": 13,
+     "gap_losses": 1
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 73,
+     "n": 11,
+     "gap_losses": 1
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 64,
+     "n": 11,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 62,
+     "n": 13,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    }
+   }
+  },
+  "Enterprise North": {
+   "n_opps": 87,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 62,
+     "n": 13,
+     "gap_losses": 2
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 29,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 88,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 100,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 89,
+     "n": 9,
+     "gap_losses": 0
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 25,
+     "n": 8,
+     "gap_losses": 3
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 100,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 70,
+     "n": 10,
+     "gap_losses": 0
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 77,
+     "n": 13,
+     "gap_losses": 2
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 43,
+     "n": 7,
+     "gap_losses": 1
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 71,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    }
+   }
+  },
+  "Mid-Market Atlantic": {
+   "n_opps": 84,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 11,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 0,
+     "n": 6,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 44,
+     "n": 9,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 58,
+     "n": 12,
+     "gap_losses": 2
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 33,
+     "n": 9,
+     "gap_losses": 3
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 67,
+     "n": 12,
+     "gap_losses": 1
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 64,
+     "n": 11,
+     "gap_losses": 2
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 53,
+     "n": 15,
+     "gap_losses": 3
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 45,
+     "n": 11,
+     "gap_losses": 2
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 30,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 10,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": 80,
+     "n": 5,
+     "gap_losses": 1
+    }
+   }
+  },
+  "Mid-Market Plains": {
+   "n_opps": 103,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 4
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 20,
+     "n": 5,
+     "gap_losses": 3
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Messaging|HubSpot": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 67,
+     "n": 9,
+     "gap_losses": 0
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 5
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": 67,
+     "n": 12,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 57,
+     "n": 7,
+     "gap_losses": 3
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 40,
+     "n": 10,
+     "gap_losses": 2
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 80,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "no campaign|smb": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 44,
+     "n": 9,
+     "gap_losses": 1
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 62,
+     "n": 13,
+     "gap_losses": 1
+    },
+    "Support Cloud|no campaign": {
+     "rate": 33,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 62,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Messaging|no campaign": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": 83,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 75,
+     "n": 12,
+     "gap_losses": 2
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 57,
+     "n": 14,
+     "gap_losses": 1
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 4
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    }
+   }
+  },
+  "Mid-Market West": {
+   "n_opps": 82,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 1
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 3
+    },
+    "Analytics|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": 60,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 58,
+     "n": 12,
+     "gap_losses": 3
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 20,
+     "n": 10,
+     "gap_losses": 3
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 50,
+     "n": 10,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 83,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 36,
+     "n": 11,
+     "gap_losses": 3
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 0
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 86,
+     "n": 7,
+     "gap_losses": 0
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 3
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 42,
+     "n": 12,
+     "gap_losses": 3
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 50,
+     "n": 16,
+     "gap_losses": 5
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 43,
+     "n": 14,
+     "gap_losses": 6
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 36,
+     "n": 11,
+     "gap_losses": 3
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 50,
+     "n": 12,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    }
+   }
+  },
+  "SMB Pacific": {
+   "n_opps": 64,
+   "product_competitor": {
+    "Support Cloud|Zendesk": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Support Cloud|Zoho": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Support Cloud|Intercom": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 2
+    },
+    "Support Cloud|HubSpot": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|an internal build": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Support Cloud|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk": {
+     "rate": 29,
+     "n": 7,
+     "gap_losses": 2
+    },
+    "Messaging|Zoho": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Messaging|Intercom": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Messaging|an internal build": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Messaging|no competitor": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 4
+    },
+    "Analytics|Intercom": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Analytics|HubSpot": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|an internal build": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|no competitor": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Zoho": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Intercom": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|an internal build": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|no competitor": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 1
+    }
+   },
+   "campaign_segment": {
+    "Zendesk Displacement - Integrations|mid-market": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Zendesk Displacement - Integrations|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Zendesk Displacement - Integrations|smb": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|mid-market": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|enterprise": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Integrations Expansion - Slack|smb": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Q3 Product Newsletter|mid-market": {
+     "rate": 50,
+     "n": 8,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|enterprise": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Q3 Product Newsletter|smb": {
+     "rate": 17,
+     "n": 6,
+     "gap_losses": 4
+    },
+    "Support Cloud Webinar Series|mid-market": {
+     "rate": 67,
+     "n": 6,
+     "gap_losses": 1
+    },
+    "Support Cloud Webinar Series|enterprise": {
+     "rate": 50,
+     "n": 6,
+     "gap_losses": 2
+    },
+    "Support Cloud Webinar Series|smb": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 3
+    },
+    "no campaign|mid-market": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "no campaign|enterprise": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "no campaign|smb": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    }
+   },
+   "product_campaign": {
+    "Support Cloud|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 0
+    },
+    "Support Cloud|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Support Cloud|Q3 Product Newsletter": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Support Cloud|Support Cloud Webinar Series": {
+     "rate": 40,
+     "n": 5,
+     "gap_losses": 2
+    },
+    "Support Cloud|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 0
+    },
+    "Messaging|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 4,
+     "gap_losses": 1
+    },
+    "Messaging|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Messaging|Q3 Product Newsletter": {
+     "rate": 44,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Messaging|Support Cloud Webinar Series": {
+     "rate": 60,
+     "n": 10,
+     "gap_losses": 1
+    },
+    "Messaging|no campaign": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    },
+    "Analytics|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Analytics|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 2
+    },
+    "Analytics|Q3 Product Newsletter": {
+     "rate": 38,
+     "n": 8,
+     "gap_losses": 5
+    },
+    "Analytics|Support Cloud Webinar Series": {
+     "rate": 33,
+     "n": 9,
+     "gap_losses": 5
+    },
+    "Analytics|no campaign": {
+     "rate": null,
+     "n": 3,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Zendesk Displacement - Integrations": {
+     "rate": null,
+     "n": 2,
+     "gap_losses": 0
+    },
+    "Self-Service Portal|Integrations Expansion - Slack": {
+     "rate": null,
+     "n": 1,
+     "gap_losses": 1
+    },
+    "Self-Service Portal|Q3 Product Newsletter": {
+     "rate": 44,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|Support Cloud Webinar Series": {
+     "rate": 56,
+     "n": 9,
+     "gap_losses": 2
+    },
+    "Self-Service Portal|no campaign": {
+     "rate": null,
+     "n": 0,
+     "gap_losses": 0
+    }
+   }
+  }
+ }
+}

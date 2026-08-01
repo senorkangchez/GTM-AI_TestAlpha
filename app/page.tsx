@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
-import { DEFAULT_TERRITORY } from "@/lib/org";
 
 export default function Home() {
-  redirect(`/territory/${DEFAULT_TERRITORY}`);
+  // The VP "what's working / not working" digest is the landing surface (v3).
+  redirect("/digest");
 }

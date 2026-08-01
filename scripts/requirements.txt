@@ -1,0 +1,8 @@
+# Fixture generation (scripts/generate.py, scripts/heatmaps.py).
+# Pinned so re-running reproduces byte-identical fixtures — Faker version drift
+# changes company names and therefore every downstream win-rate number.
+#
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r scripts/requirements.txt
+#   .venv/bin/python scripts/generate.py && .venv/bin/python scripts/heatmaps.py
+faker==30.8.2

@@ -77,8 +77,8 @@ export function makeAccount(
   crm_stage: string,
   deal_amount: number,
   signals: Signal[],
-  territory = "west-enterprise",
-  district = "west",
+  territory = "mid-market-west",
+  district = "west-district",
 ): AccountModel {
   const score = scoreAccount(signals);
   return {
@@ -89,6 +89,8 @@ export function makeAccount(
     deal_amount,
     territory,
     district,
+    segment: "mid-market",
+    team: "West",
     signals,
     touches: [],
     score,

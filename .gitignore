@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+# python (fixture generation)
+.venv/
+__pycache__/
 /.pnp
 .pnp.*
 .yarn/*

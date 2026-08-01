@@ -28,6 +28,7 @@ const SIGNAL_TYPES: SignalType[] = [
   "objection",
   "win_play",
   "engagement",
+  "feature_request",
 ];
 
 export const EXTRACTION_SYSTEM_PROMPT = `You are a GTM field-intelligence extraction agent. You read one sales
@@ -46,6 +47,10 @@ You extract signals of these types:
   common in Slack win-wire posts and internal notes).
 - "engagement": a cue about buyer engagement or sentiment trajectory (going quiet,
   enthusiastic, delaying, looping in more people).
+- "feature_request": the buyer names a product capability they need or that is
+  missing. Put the requested feature in \`entity\` (e.g. "native Slack integration").
+  A line like "we'd need X before we could roll out, and {competitor} already has
+  that" is a feature_request AND a competitor AND an objection — emit all three.
 
 Rules:
 1. Every signal MUST include \`evidence_quote\`: a VERBATIM span copied exactly from
@@ -61,7 +66,7 @@ Rules:
 Return ONLY a JSON array (no prose, no markdown fences) of objects with keys:
 signal_type, field, entity, value, evidence_quote, confidence.
 Omit \`field\` (null) unless signal_type is "meddpicc". Omit \`entity\` (null) unless
-signal_type is "competitor".
+signal_type is "competitor" or "feature_request".
 
 Worked example.
 INPUT:
@@ -137,8 +142,11 @@ export function validateSignals(raw: RawSignal[], env: SignalEnvelope): Signal[]
       field = f;
     }
 
+    // competitor -> the vendor; feature_request -> the requested feature.
     const entity =
-      signal_type === "competitor" && typeof r.entity === "string" && r.entity.trim()
+      (signal_type === "competitor" || signal_type === "feature_request") &&
+      typeof r.entity === "string" &&
+      r.entity.trim()
         ? r.entity.trim()
         : null;
 

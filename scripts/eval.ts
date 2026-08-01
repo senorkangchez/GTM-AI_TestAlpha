@@ -25,11 +25,16 @@ interface GT {
   meddpicc_present: string[];
   competitor: string | null;
   has_win_play: boolean;
+  has_conversations: boolean;
 }
 
 const root = process.cwd();
 const signals: Signal[] = JSON.parse(readFileSync(resolve(root, "fixtures/signals.precomputed.json"), "utf8"));
-const gt: GT[] = JSON.parse(readFileSync(resolve(root, "fixtures/ground_truth.json"), "utf8"));
+const gtAll: GT[] = JSON.parse(readFileSync(resolve(root, "fixtures/ground_truth.json"), "utf8"));
+// v3: ground_truth is the 600-opp analytics book; only has_conversations rows have
+// transcripts to extract from. Grading the other ~570 would count every planted
+// MEDDPICC field as a false-negative and collapse recall into meaningless numbers.
+const gt: GT[] = gtAll.filter((g) => g.has_conversations);
 const meta = JSON.parse(readFileSync(resolve(root, "fixtures/signals.meta.json"), "utf8"));
 
 function detectedFields(accountId: string): Set<string> {
@@ -79,7 +84,7 @@ function prf(c: { tp: number; fp: number; fn: number }) {
 
 console.log(`\nExtraction eval  (mode: ${meta.mode}, model: ${meta.model})`);
 console.log("=".repeat(64));
-console.log("MEDDPICC field detection vs planted ground truth (12 accounts)\n");
+console.log(`MEDDPICC field detection vs planted ground truth (${gt.length} conversation accounts)\n`);
 console.log("field".padEnd(20) + "prec".padStart(7) + "recall".padStart(8) + "f1".padStart(7) + "  (tp/fp/fn)");
 console.log("-".repeat(64));
 for (const f of FIELDS) {

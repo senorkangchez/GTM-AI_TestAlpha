@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTerritory, accountsInTerritory, getChangeFeed, listTerritories } from "@/lib/store";
-import { districtOfTerritory, orgTitle } from "@/lib/org";
+import { districtOfTerritory, geoTitle } from "@/lib/geo";
 import { currency } from "@/lib/format";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ScoreRing } from "@/components/ScoreRing";
@@ -37,9 +37,9 @@ export default async function TerritoryPage({
     <div>
       <Breadcrumb
         items={[
-          { label: district ? orgTitle(district) : "District", href: district ? `/district/${district}` : undefined },
+          { label: district ? geoTitle(district) : "District", href: district ? `/district/${district}` : undefined },
           { label: territory.name },
-          { label: `${accounts.length} accounts` },
+          { label: `${territory.oppCount} opps` },
         ]}
       />
 
@@ -47,11 +47,17 @@ export default async function TerritoryPage({
         <div>
           <h1 className="text-2xl font-bold">{territory.name}</h1>
           <p className="text-muted text-sm mt-1">
-            {currency(territory.dealValue)} pipeline ·{" "}
-            <span className="text-red-600 dark:text-red-400 font-medium">
-              {currency(territory.divergingPipeline)} diverging
-            </span>{" "}
-            across {territory.flaggedAccounts.length} deals
+            {territory.oppCount} opps · {currency(territory.pipeline)} pipeline ·{" "}
+            {territory.winRate !== null ? `${territory.winRate}% win rate` : "win rate n<5"}
+            {territory.flaggedAccounts.length > 0 && (
+              <>
+                {" · "}
+                <span className="text-red-600 dark:text-red-400 font-medium">
+                  {currency(territory.divergingPipeline)} diverging
+                </span>{" "}
+                across {territory.flaggedAccounts.length} scored deals
+              </>
+            )}
           </p>
         </div>
         <ScoreRing score={territory.score} />

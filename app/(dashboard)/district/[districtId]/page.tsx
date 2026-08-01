@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getDistrict, accountsInDistrict, listTerritories, listDistricts } from "@/lib/store";
-import { districtOfTerritory } from "@/lib/org";
+import { districtOfTerritory } from "@/lib/geo";
 import { currency } from "@/lib/format";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ScoreRing } from "@/components/ScoreRing";
@@ -37,11 +37,17 @@ export default async function DistrictPage({
         <div>
           <h1 className="text-2xl font-bold">{district.name}</h1>
           <p className="text-muted text-sm mt-1">
-            {currency(district.dealValue)} pipeline ·{" "}
-            <span className="text-red-600 dark:text-red-400 font-medium">
-              {currency(district.divergingPipeline)} diverging
-            </span>{" "}
-            across {district.flaggedAccounts.length} deals
+            {district.oppCount} opps · {currency(district.pipeline)} pipeline ·{" "}
+            {district.winRate !== null ? `${district.winRate}% win rate` : "win rate n<5"}
+            {district.flaggedAccounts.length > 0 && (
+              <>
+                {" · "}
+                <span className="text-red-600 dark:text-red-400 font-medium">
+                  {currency(district.divergingPipeline)} diverging
+                </span>{" "}
+                across {district.flaggedAccounts.length} scored deals
+              </>
+            )}
           </p>
         </div>
         <ScoreRing score={district.score} />
@@ -57,7 +63,8 @@ export default async function DistrictPage({
                   <div>
                     <div className="font-medium">{t.name}</div>
                     <div className="text-xs text-muted mt-0.5">
-                      {currency(t.dealValue)} · {currency(t.divergingPipeline)} diverging
+                      {t.oppCount} opps · {currency(t.pipeline)} ·{" "}
+                      {t.winRate !== null ? `${t.winRate}% win` : "win n<5"}
                     </div>
                   </div>
                   <div className="text-2xl font-bold" style={{ color: BAND_HEX[t.score.band] }}>

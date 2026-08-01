@@ -4,9 +4,9 @@ import "./globals.css";
 import { getMeta } from "@/lib/store";
 
 export const metadata: Metadata = {
-  title: "Field Intelligence System",
+  title: "GTM Signal Engine",
   description:
-    "A system of intelligence beside the CRM — the field says what the record can't.",
+    "Turn field signals into golden data and route them — product, marketing, sales — automatically.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -18,13 +18,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="mx-auto max-w-6xl px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <span className="inline-block h-2.5 w-2.5 rounded-full bg-accent" />
-              Field Intelligence
+              GTM Signal Engine
             </Link>
             <nav className="flex items-center gap-5 text-sm text-muted">
-              <Link href="/" className="hover:text-foreground">Territories</Link>
-              <Link href="/routing" className="hover:text-foreground">Routing</Link>
-              <Link href="/queue" className="hover:text-foreground">Queue</Link>
-              <Link href="/live" className="hover:text-foreground">Live extract</Link>
+              <Link href="/digest" className="hover:text-foreground">Digest</Link>
+              <Link href="/action" className="hover:text-foreground">Fan-out</Link>
+              <Link href="/heatmap" className="hover:text-foreground">Macro</Link>
+              <Link href="/teams" className="hover:text-foreground">Teams</Link>
               <Link href="/how-it-works" className="hover:text-foreground">How it works</Link>
               <a href="/deck.html" target="_blank" rel="noopener" className="hover:text-foreground">Deck ↗</a>
               <span
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="flex-1 mx-auto w-full max-w-6xl px-5 py-8">{children}</main>
         <footer className="border-t border-border text-xs text-muted">
           <div className="mx-auto max-w-6xl px-5 py-4">
-            System of intelligence beside the CRM · synthetic demo data · deterministic scoring & routing ·{" "}
+            GTM Signal Engine · synthetic demo data · deterministic scoring & routing · read-only ·{" "}
             {meta.mode === "live" ? "live" : "mock"} extraction ({meta.signals} signals)
           </div>
         </footer>

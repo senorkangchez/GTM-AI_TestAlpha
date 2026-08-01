@@ -1,17 +1,23 @@
 // Composes the derived model the UI consumes, from the committed fixtures.
 // Pure + deterministic: extraction is precomputed, scoring/rollup/divergence run
 // here at build/server time. No LLM, no per-request cost.
+//
+// v3 split: ground_truth.json is now the 600-opp analytics book. Only the ~30 rows
+// with has_conversations get a scored AccountModel (they alone have envelopes /
+// signals / touches). Geography is read from the opp (slugified), not a separate
+// enrichment file. The full 600-opp macro rollup lives in lib/analytics.ts.
 import envelopesJson from "@/fixtures/envelopes.json";
 import signalsJson from "@/fixtures/signals.precomputed.json";
 import groundTruthJson from "@/fixtures/ground_truth.json";
 import metaJson from "@/fixtures/signals.meta.json";
 import touchesJson from "@/fixtures/touches.json";
-import type { AccountModel, GroupRollup, Signal, SignalEnvelope, Touch } from "./types";
+import type { AccountModel, GroupRollup, Opp, Signal, SignalEnvelope, Touch } from "./types";
 import { scoreAccount, computeDivergence } from "./scoring";
 import { scoreProgression } from "./progression";
 import { computeRubric, computeProcessDivergence } from "./rubric";
 import { buildGroupRollup } from "./rollup";
-import { getEnrichment, buildOrgTree, orgTitle } from "./org";
+import { slugify, geoTitle, listTerritorySlugs, listDistrictSlugs } from "./geo";
+import { macroForTerritory, macroForDistrict } from "./analytics";
 import { AS_OF } from "./format";
 
 const PRIOR = new Date(new Date(AS_OF).getTime() - 7 * 86_400_000).toISOString();
@@ -28,16 +34,9 @@ function touchesForAccount(accountId: string): Touch[] {
   return touches.filter((t) => t.account_id === accountId);
 }
 
-interface GroundTruth {
-  account: string;
-  account_id: string;
-  opp_id: string;
-  crm_stage: string;
-  competitor: string | null;
-  trajectory: string;
-  has_win_play: boolean;
-}
-const groundTruth = groundTruthJson as GroundTruth[];
+const allOpps = groundTruthJson as Opp[];
+// Only these get a scored account model — they have conversations to extract from.
+const conversationOpps = allOpps.filter((o) => o.has_conversations);
 
 export interface ExtractionMeta {
   mode: "live" | "mock";
@@ -57,52 +56,52 @@ function signalsForAccount(accountId: string): Signal[] {
   return signals.filter((s) => s.account_id === accountId);
 }
 
-/** Build the 12 scored account models. */
+/** Build the ~30 scored account models (has_conversations opps only). */
 export function buildAccounts(): AccountModel[] {
-  return groundTruth.map((g) => {
-    const accSignals = signalsForAccount(g.account_id);
-    const enr = getEnrichment(g.account_id);
+  return conversationOpps.map((o) => {
+    const accSignals = signalsForAccount(o.account_id);
     const score = scoreAccount(accSignals, AS_OF);
     const scorePrior = scoreAccount(accSignals, PRIOR);
-    const rubric = computeRubric(g.account_id, accSignals);
-    const accTouches = touchesForAccount(g.account_id);
+    const rubric = computeRubric(o.account_id, accSignals);
+    const accTouches = touchesForAccount(o.account_id);
     return {
-      account_id: g.account_id,
-      account_name: g.account,
-      opp_id: g.opp_id,
-      crm_stage: g.crm_stage,
-      deal_amount: enr?.deal_amount ?? 0,
-      territory: enr?.territory ?? "unassigned",
-      district: enr?.district ?? "unassigned",
+      account_id: o.account_id,
+      account_name: o.account,
+      opp_id: o.opp_id,
+      crm_stage: o.crm_stage,
+      deal_amount: o.deal_amount,
+      territory: slugify(o.territory),
+      district: slugify(o.district),
+      segment: o.segment,
+      team: o.team,
       signals: accSignals,
       touches: accTouches,
       score,
       scorePrior,
       progression: scoreProgression(accTouches, AS_OF),
-      divergence: computeDivergence(score, g.crm_stage),
+      divergence: computeDivergence(score, o.crm_stage),
       rubric,
-      processDivergence: computeProcessDivergence(rubric, g.crm_stage),
+      processDivergence: computeProcessDivergence(rubric, o.crm_stage),
     };
   });
 }
 
+/** Territory rollups. Iterate the derived geo registry (superset), assign scored
+ *  accounts by slug, and merge the full-book macro numbers so a territory with 0
+ *  scored accounts still shows real opp count / win-rate / pipeline. */
 export function buildTerritories(accounts: AccountModel[]): GroupRollup[] {
-  const tree = buildOrgTree();
-  const out: GroupRollup[] = [];
-  for (const territories of Object.values(tree)) {
-    for (const territory of Object.keys(territories)) {
-      const accts = accounts.filter((a) => a.territory === territory);
-      out.push(buildGroupRollup(territory, orgTitle(territory), "territory", accts));
-    }
-  }
-  return out;
+  return listTerritorySlugs().map((slug) => {
+    const accts = accounts.filter((a) => a.territory === slug);
+    const base = buildGroupRollup(slug, geoTitle(slug), "territory", accts);
+    return { ...base, ...macroForTerritory(slug) };
+  });
 }
 
 export function buildDistricts(accounts: AccountModel[]): GroupRollup[] {
-  const tree = buildOrgTree();
-  return Object.keys(tree).map((district) => {
-    const accts = accounts.filter((a) => a.district === district);
-    return buildGroupRollup(district, orgTitle(district), "district", accts);
+  return listDistrictSlugs().map((slug) => {
+    const accts = accounts.filter((a) => a.district === slug);
+    const base = buildGroupRollup(slug, geoTitle(slug), "district", accts);
+    return { ...base, ...macroForDistrict(slug) };
   });
 }
 

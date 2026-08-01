@@ -72,14 +72,14 @@ export default function HowItWorks() {
         </p>
       </Section>
 
-      <Section title="How it lands (and stays trustworthy)">
+      <Section title="Why you can trust it (evidence provenance)">
         <p>
-          The account view is a <strong>receipt</strong>: each MEDDPICC field shows the source
-          conversation → the field it populated → the verbatim quote behind it. Absent fields are
-          shown greyed — absence is itself signal. <strong>Nothing auto-writes to the CRM.</strong>{" "}
-          Every extracted field is a suggestion a human accepts or rejects — inline on the account, or
-          in bulk from the <strong>approval queue</strong>. Accept flips status and would sync to
-          Salesforce; every decision is also labeled training data for the extraction eval.
+          This is a <strong>read-only</strong> intelligence product — it never writes to your
+          systems. Every number on every surface (the digest, the KPIs, the heatmap cells, the
+          fan-out recommendations) traces back to a <strong>verbatim quote</strong> and its source
+          conversation or touch. The account view is the receipt: each field shows the source →
+          the field it evidenced → the exact span behind it, and absent fields are shown greyed
+          because absence is itself signal. Nothing is asserted without a source.
         </p>
       </Section>
 
