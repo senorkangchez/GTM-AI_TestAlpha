@@ -65,7 +65,7 @@ describe("scoreProgression", () => {
   });
 
   it("Northwind: high progression but low health (the two dials disagree)", () => {
-    const nw = buildAccounts().find((a) => a.account_id === "acc_northwind")!;
+    const nw = buildAccounts().find((a) => a.account_id === "acc_northwind_systems")!;
     expect(nw.progression.progression).toBeGreaterThanOrEqual(55); // far along (Commit)
     expect(nw.score.total).toBeLessThan(45); // but unhealthy
     expect(nw.progression.progression - nw.score.total).toBeGreaterThan(20); // visible gap

@@ -60,11 +60,9 @@ export function RoutingTable({ decisions }: { decisions: RoutingDecision[] }) {
             {d.secondary.map((s) => (
               <DestinationBadge key={s} destination={s} muted />
             ))}
-            {d.requires_approval && (
-              <span className="text-xs rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 text-amber-700 dark:text-amber-300">
-                draft · needs approval
-              </span>
-            )}
+            <span className="text-xs rounded-full border border-border px-2 py-0.5 text-muted">
+              {d.destination === "slack_deal_owner" ? "would auto-fire" : "routed for the owning team"}
+            </span>
             <span className="ml-auto text-xs text-muted tabular-nums">urgency {d.urgency}</span>
           </div>
           <div className="mt-1 flex items-center gap-2 text-sm">

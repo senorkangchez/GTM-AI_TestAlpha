@@ -24,11 +24,10 @@ export default function HowItWorks() {
       <h1 className="text-2xl font-bold">How it works</h1>
       <p className="mt-2 text-muted">
         <strong>Problem.</strong> Field intelligence is trapped across calls, emails, and Slack, and
-        reps won&apos;t do the CRM admin to surface it — so the CRM goes stale and the deals quietly
-        rotting look fine on paper. This system extracts that intelligence automatically, lands it on
-        the account as <strong>reviewable</strong> CRM updates, and flags where the CRM disagrees with
-        what the field is actually saying. It sits <strong>beside</strong> the CRM, never silently
-        writing to it.
+        reps won&apos;t do the CRM admin to surface it — so deals quietly rotting look fine on paper.
+        This system extracts that intelligence automatically, turns it into golden data, and
+        recommends coordinated moves across product, marketing, and sales. It is <strong>read-only</strong>
+        and never writes to CRM or triggers an external system.
       </p>
 
       <Section title="The flow">
@@ -127,9 +126,9 @@ export default function HowItWorks() {
         <p>
           When a play wins repeatedly against the same competitor, it becomes a golden route.{" "}
           {golden
-            ? `${golden.win_count} wins vs ${golden.competitor} promoted the migration-story play; one approval pushes it to ${golden.propagate_to.length} open ${golden.competitor} deals.`
-            : "The play library propagates the winning talk track rep-to-rep."}{" "}
-          One rep&apos;s win reaches every rep who can use it — automatically.
+            ? `${golden.win_count} wins vs ${golden.competitor} promoted the migration-story play; the recommendation reaches ${golden.propagate_to.length} open ${golden.competitor} deals.`
+            : "The play library surfaces the winning talk track rep-to-rep."}{" "}
+          One rep&apos;s win becomes a recommendation every relevant team can use.
         </p>
       </Section>
 

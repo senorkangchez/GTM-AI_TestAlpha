@@ -87,7 +87,7 @@ export default async function AccountPage({
                     <DestinationBadge key={s} destination={s} muted />
                   ))}
                   <span className="text-xs rounded-full border border-border px-2 py-0.5 text-muted">
-                    {d.requires_approval ? "routed for the owning team" : "would auto-fire"}
+                    {d.destination === "slack_deal_owner" ? "would auto-fire" : "routed for the owning team"}
                   </span>
                 </div>
                 <p className="mt-1 text-xs text-muted">{d.reason_code}</p>

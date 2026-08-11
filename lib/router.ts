@@ -3,8 +3,8 @@
 // guardrails -> reason-coded decision. Destinations map to the real stack
 // (Slack / Outreach / Marketo / Salesforce / #product / play library).
 //
-// Every decision carries a reason_code and requires_approval flag. The
-// alert-fatigue governor caps how many escalations a recipient gets.
+// Every decision carries a reason_code and evidence quote. The alert-fatigue
+// governor caps how many recommendations a recipient gets.
 // ---------------------------------------------------------------------------
 import type { AccountModel, Destination, RoutingDecision, Signal, WinPlay } from "./types";
 import { allSignals, envelopeById } from "./data";
@@ -90,7 +90,6 @@ export function buildWinPlays(accounts: AccountModel[]): WinPlay[] {
       win_count: winCount,
       status: winCount >= GOLDEN_ROUTE_MIN ? "golden" : "emerging",
       propagate_to: openByCompetitor.get(competitor) ?? [],
-      requires_approval: true,
     });
   }
   return plays.sort((a, b) => b.win_count - a.win_count);
@@ -125,7 +124,7 @@ export function routeAllSignals(accounts: AccountModel[]): {
   let loggedOnly = 0;
   const push = (d: RoutingDecision) => decisions.push(d);
 
-  // A. Golden-route propagation (win plays). Requires approval; pushes to open deals.
+  // A. Golden-route propagation (win plays) recommends the play for open deals.
   for (const play of winPlays) {
     if (play.status !== "golden") continue;
     push({
@@ -136,7 +135,6 @@ export function routeAllSignals(accounts: AccountModel[]): {
       entity: play.competitor,
       destination: "add_to_play_library",
       secondary: ["slack_deal_owner", "outreach_task"],
-      requires_approval: true,
       reason_code: `golden_route: ${play.win_count} wins vs ${play.competitor} -> propagate to ${play.propagate_to.length} open deals`,
       urgency: urgency({ confidence: 0.95, cluster: play.win_count, dealNorm: 1, stage: "Negotiation", load: 0 }),
       evidence_quote: play.summary,
@@ -157,7 +155,6 @@ export function routeAllSignals(accounts: AccountModel[]): {
       entity,
       destination: "marketo_campaign",
       secondary: ["add_to_play_library"],
-      requires_approval: true,
       reason_code: `competitor_cluster: ${entity} active in ${accts.size} deals this segment (>= ${CLUSTER_THRESHOLD})`,
       urgency: urgency({ confidence: 0.9, cluster: accts.size, dealNorm: 0.8, stage: "Evaluation", load: 0 }),
       evidence_quote: rep?.evidence_quote ?? "",
@@ -187,7 +184,6 @@ export function routeAllSignals(accounts: AccountModel[]): {
       entity: null,
       destination: "salesforce_task",
       secondary,
-      requires_approval: canEscalate, // leadership escalation is draft-only
       reason_code:
         `divergence_${a.divergence.severity}: CRM ${a.crm_stage} vs signal ${a.divergence.signalTotal} (gap ${a.divergence.gap})` +
         (canEscalate
@@ -219,7 +215,6 @@ export function routeAllSignals(accounts: AccountModel[]): {
       entity: comp.entity,
       destination: "slack_deal_owner",
       secondary: ["outreach_task"],
-      requires_approval: false, // autonomous tier: a nudge to one rep
       reason_code: `late_stage_competitor: ${comp.entity} in a ${a.crm_stage} deal`,
       urgency: urgency({
         confidence: comp.confidence,
@@ -254,7 +249,6 @@ export function routeAllSignals(accounts: AccountModel[]): {
       entity: null,
       destination: "product_insight",
       secondary: [],
-      requires_approval: true,
       reason_code: `recurring_pain: same gap raised across ${accts.size} accounts -> route to product`,
       urgency: urgency({ confidence: 0.85, cluster: accts.size, dealNorm: 0.5, stage: "Evaluation", load: 0 }),
       evidence_quote: painQuote.get(theme) ?? theme,

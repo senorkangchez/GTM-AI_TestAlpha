@@ -255,7 +255,6 @@ export interface RoutingDecision {
   entity: string | null;
   destination: Destination;
   secondary: Destination[];
-  requires_approval: boolean;
   reason_code: string;
   urgency: number; // 0..1, rounded for display
   evidence_quote: string;
@@ -272,7 +271,6 @@ export interface WinPlay {
   win_count: number; // how many wins cite this play
   status: "emerging" | "golden"; // golden once win_count >= threshold
   propagate_to: { account_id: string; account_name: string }[]; // open deals vs same competitor
-  requires_approval: boolean;
 }
 
 // ---- Leadership rubric (auto-filled surveys) -------------------------------

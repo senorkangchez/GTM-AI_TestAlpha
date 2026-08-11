@@ -40,18 +40,7 @@ export function WinPlayCard({ play }: { play: WinPlay }) {
               </Link>
             ))}
           </div>
-          <div className="mt-4 flex items-center gap-3">
-            <button
-              disabled
-              className="rounded-lg bg-accent px-3 py-1.5 text-sm font-medium text-white opacity-90 cursor-not-allowed"
-              title="Draft — requires PMM/enablement approval (demo)"
-            >
-              Approve &amp; push to deal owners
-            </button>
-            <span className="text-xs text-muted">
-              Draft only — requires approval. Pushes a battlecard to each deal owner (Slack + Outreach).
-            </span>
-          </div>
+          <p className="mt-4 text-xs text-muted">Read-only recommendation: the owning team can review this play for the listed open deals.</p>
         </div>
       ) : (
         <p className="mt-3 text-sm text-muted">
