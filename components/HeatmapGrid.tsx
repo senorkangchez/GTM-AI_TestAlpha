@@ -20,7 +20,7 @@ export function HeatmapGrid({ grid, scope, view, rows, cols }: { grid: HeatmapGr
             const deals = oppsInCell(grid, scope, row, col);
             return <td key={col} className="p-2 align-top"><div className={`min-h-24 rounded-lg p-3 ${tone(cell)}`}>
               <div className="text-2xl font-semibold tabular-nums">{cell.rate === null ? "—" : `${cell.rate}%`}</div>
-              <div className="mt-1 text-xs">n={cell.n}{cell.gap_losses ? ` · ${cell.gap_losses} gap-cited losses` : ""}</div>
+              <div className="mt-1 text-xs">{cell.n} closed opportunities{cell.gap_losses ? ` · ${cell.gap_losses} gap-cited losses` : ""}</div>
               {deals.length > 0 && <div className="mt-2 flex flex-wrap gap-1">{deals.slice(0, 4).map((deal) => <Link key={deal.opp_id} href={`/account/${deal.account_id}`} className="text-[11px] underline">{deal.account}</Link>)}</div>}
             </div></td>;
           })}</tr>)}
@@ -29,4 +29,3 @@ export function HeatmapGrid({ grid, scope, view, rows, cols }: { grid: HeatmapGr
     </div>
   );
 }
-

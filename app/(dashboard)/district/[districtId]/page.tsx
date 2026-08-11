@@ -38,7 +38,7 @@ export default async function DistrictPage({
           <h1 className="text-2xl font-bold">{district.name}</h1>
           <p className="text-muted text-sm mt-1">
             {district.oppCount} opps · {currency(district.pipeline)} pipeline ·{" "}
-            {district.winRate !== null ? `${district.winRate}% win rate` : "win rate n<5"}
+            {district.winRate !== null ? `${district.winRate}% win rate` : "win rate suppressed: fewer than five closed opportunities"}
             {district.flaggedAccounts.length > 0 && (
               <>
                 {" · "}
@@ -64,7 +64,7 @@ export default async function DistrictPage({
                     <div className="font-medium">{t.name}</div>
                     <div className="text-xs text-muted mt-0.5">
                       {t.oppCount} opps · {currency(t.pipeline)} ·{" "}
-                      {t.winRate !== null ? `${t.winRate}% win` : "win n<5"}
+                      {t.winRate !== null ? `${t.winRate}% win` : "win rate suppressed: fewer than five closed opportunities"}
                     </div>
                   </div>
                   <div className="text-2xl font-bold" style={{ color: BAND_HEX[t.score.band] }}>

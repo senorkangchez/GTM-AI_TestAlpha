@@ -215,7 +215,7 @@ cross-tab in a costume. A heatmap prints the rate directly and is scannable in a
 a second. Sankey is retired from this view; see §J if you want a flow diagram.
 
 **Rules for the cells:**
-- **Grey out any cell with n < 5** and show "n=3" instead of a rate. A 100% win rate
+- **Grey out any cell with fewer than five closed opportunities** and show "3 closed opportunities" instead of a rate. A 100% win rate
   off 2 deals is noise dressed as a finding; suppressing it is the credibility move.
 - Cell drills into the deals behind it, with evidence quotes.
 - Splittable by segment/district/territory — a product can win enterprise and lose
@@ -245,8 +245,8 @@ Hide the scope select entirely when Level = All. This is cleaner than one long g
 list and it makes the hierarchy explicit.
 
 **F1a-4. Show cell density, and warn when the breakdown outruns the data.** This is the
-non-obvious requirement and it's what keeps the view honest. Rate analysis needs n≥5
-per cell, and cells multiply: a 4×6 grid is 24 cells, so it needs ~120 closed deals in
+non-obvious requirement and it's what keeps the view honest. Rate analysis needs at least five closed opportunities
+per cell, and cells multiply: a 4×6 grid is 24 cells, so it needs ~120 closed opportunities in
 scope to fill. Print a live "N of M cells have enough volume (P%)" readout and turn it
 amber below 40%. **Say this out loud rather than hiding it:** *"Product × competitor
 doesn't hold up at territory level — one territory doesn't close enough deals in a

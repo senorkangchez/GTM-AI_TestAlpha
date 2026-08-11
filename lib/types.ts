@@ -202,7 +202,7 @@ export interface CampaignsFile {
 
 export type HeatmapGridKey = "product_competitor" | "campaign_segment" | "product_campaign";
 
-/** One cell: win rate (null when n<MIN_N so the UI greys it), n closed, gap-cited losses. */
+/** One cell: win rate (null below the closed-opportunity threshold), closed opportunities, gap-cited losses. */
 export interface HeatmapCell {
   rate: number | null;
   n: number;
@@ -354,6 +354,6 @@ export interface GroupRollup {
   childIds: string[];
   // ---- macro fields, from the full 600-opp book in scope (not just scored) ----
   oppCount: number;
-  winRate: number | null; // % of closed opps won; null when <5 closed
+  winRate: number | null; // % of closed opportunities won; null below five closed opportunities
   pipeline: number; // Σ deal_amount of all opps in scope
 }

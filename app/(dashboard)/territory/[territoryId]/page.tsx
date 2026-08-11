@@ -48,7 +48,7 @@ export default async function TerritoryPage({
           <h1 className="text-2xl font-bold">{territory.name}</h1>
           <p className="text-muted text-sm mt-1">
             {territory.oppCount} opps · {currency(territory.pipeline)} pipeline ·{" "}
-            {territory.winRate !== null ? `${territory.winRate}% win rate` : "win rate n<5"}
+            {territory.winRate !== null ? `${territory.winRate}% win rate` : "win rate suppressed: fewer than five closed opportunities"}
             {territory.flaggedAccounts.length > 0 && (
               <>
                 {" · "}
