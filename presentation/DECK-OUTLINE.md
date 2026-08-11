@@ -4,6 +4,10 @@
 
 Every customer conversation contains signals that matter to more than one team. The engine turns those signals into golden data and coordinated recommendations, changing the unit of GTM from the individual deal to the motion.
 
+## Case context
+
+The deck opens by grounding the challenge: Sales hears feature requests, competitor context, and buying intent first, but those signals still travel through notes, QBRs, and ad hoc Slack threads. The first move is to make that evidence usable by Product, Marketing, and Sales without adding administrative work for reps.
+
 ## Audience moments
 
 - **VP Sales Engineering:** feature requests and win/loss patterns by product, competitor, and team.
