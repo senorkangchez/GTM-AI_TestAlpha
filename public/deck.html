@@ -31,9 +31,10 @@
   .bars { display:grid; gap:12px; margin-top:22px; } .bar-row { display:grid; grid-template-columns:130px 1fr 48px; gap:12px; align-items:center; font-size:14px; } .bar-track { height:12px; overflow:hidden; border-radius:999px; background:#e6f4f1; } .bar { height:100%; border-radius:inherit; background:var(--accent); }
   .lanes { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px; } .lane { border-top:4px solid var(--accent); border-radius:14px; background:var(--surface); border-left:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px; box-shadow:var(--shadow); } .lane.marketing { border-top-color:#7c3aed; } .lane.sales { border-top-color:#2563eb; } .mode { display:inline-block; margin-top:14px; border-radius:999px; padding:5px 9px; background:#f2f4f7; color:var(--muted); font:10px var(--mono); }
   .mini-flow { display:flex; gap:12px; align-items:center; margin-top:26px; } .mini-flow span { border:1px solid var(--line); border-radius:999px; background:var(--surface); padding:9px 13px; font-size:13px; } .mini-flow b { color:var(--accent); }
+  .graph-layers { display:grid; grid-template-columns:1.1fr 1.15fr 1fr; gap:16px; margin-top:28px; align-items:stretch; } .graph-layer { position:relative; padding:18px; border:1px solid var(--line); border-radius:18px; background:var(--surface); box-shadow:var(--shadow); } .graph-layer:nth-child(2) { border-color:#99f6e4; background:#f0fdfa; } .graph-layer h3 { margin-top:8px; } .graph-stack { display:grid; gap:8px; margin-top:16px; } .graph-chip { padding:9px 11px; border-radius:10px; background:#f8fafc; border:1px solid var(--line); font-size:13px; } .graph-layer:nth-child(2) .graph-chip { background:#fff; } .graph-arrow { position:absolute; right:-25px; top:50%; z-index:2; width:28px; color:var(--accent); text-align:center; font-size:25px; font-weight:800; } .metric-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; } .metric-strip .card { padding:16px; } .metric-strip .detail { font-size:13px; }
   .close { font-size:clamp(28px,4.5vw,56px); line-height:1.08; max-width:900px; letter-spacing:-.045em; } .close strong { color:var(--accent); }
   .nav { position:fixed; z-index:6; right:28px; bottom:25px; display:flex; gap:8px; } .dot { width:9px; height:9px; padding:0; border:0; border-radius:50%; background:#cbd5e1; cursor:pointer; } .dot.on { background:var(--accent); transform:scale(1.35); } .counter { position:fixed; z-index:6; right:28px; top:22px; color:var(--muted); font:11px var(--mono); } .hint { position:fixed; z-index:6; left:28px; bottom:25px; color:var(--muted); font:11px var(--mono); }
-  @media (max-width:760px) { .two,.three,.lanes { grid-template-columns:1fr; } .flow,.mini-flow { flex-wrap:wrap; } .arrow { transform:rotate(90deg); } .heatmap { font-size:10px; border-spacing:3px; } .heatmap td { min-width:50px; padding:8px 3px; } .heatmap th { font-size:8px; } }
+  @media (max-width:760px) { .two,.three,.lanes,.graph-layers,.metric-strip { grid-template-columns:1fr; } .flow,.mini-flow { flex-wrap:wrap; } .arrow { transform:rotate(90deg); } .graph-arrow { display:none; } .heatmap { font-size:10px; border-spacing:3px; } .heatmap td { min-width:50px; padding:8px 3px; } .heatmap th { font-size:8px; } }
   @media (prefers-reduced-motion:reduce) { .slide,.progress { transition:none; } }
 </style>
 </head>
@@ -87,6 +88,46 @@
         <div class="node"><strong>Macro recommendations</strong><p>Product prioritization · nurture · sales play</p></div>
       </div>
       <p class="lead">The system recommends a move; it does not write to CRM or trigger an external system. The trust layer is evidence provenance.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="wrap">
+      <p class="eyebrow">Context graph · three connected layers</p>
+      <h2>Product and Marketing views are different lenses on the <span class="accent">same opportunity graph.</span></h2>
+      <div class="graph-layers">
+        <div class="graph-layer"><div class="label">1 · Golden data</div><h3>Connected field context</h3><div class="graph-stack"><div class="graph-chip">Opportunity + account</div><div class="graph-chip">Feature request + product</div><div class="graph-chip">Competitor + team + segment</div><div class="graph-chip">Campaign + engagement</div></div><span class="graph-arrow">→</span></div>
+        <div class="graph-layer"><div class="label">2 · Department lenses</div><h3>Decisions from shared evidence</h3><div class="graph-stack"><div class="graph-chip"><strong>Product:</strong> feature demand and Product × Competitor win rate</div><div class="graph-chip"><strong>Marketing:</strong> campaign selection and Campaign × Segment conversion</div><div class="graph-chip"><strong>Sales:</strong> competitive play for similarly exposed reps</div></div><span class="graph-arrow">→</span></div>
+        <div class="graph-layer"><div class="label">3 · Business value</div><h3>Measure the motion</h3><div class="graph-stack"><div class="graph-chip">Pipeline exposed to a recurring gap</div><div class="graph-chip">Pipeline influenced by a relevant campaign</div><div class="graph-chip">Win-rate and conversion learning</div></div></div>
+      </div>
+      <p class="lead">The graph makes the handoff visible: evidence becomes a product or campaign decision, then rolls into an auditable pipeline outcome.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="wrap">
+      <p class="eyebrow">Connected decision example</p>
+      <h2>One graph view keeps product prioritization, campaign learning, and pipeline value <span class="accent">in the same conversation.</span></h2>
+      <div class="graph-layers">
+        <div class="graph-layer"><div class="label">Product view</div><h3>Feature demand</h3><div class="value accent">134</div><p class="detail">Native Slack integration requests, representing <strong>$43.8M</strong> in associated pipeline across the analytics book.</p><span class="graph-arrow">→</span></div>
+        <div class="graph-layer"><div class="label">Marketing view</div><h3>Relevant nurture</h3><div class="value good">64%</div><p class="detail">Signal-triggered campaign conversion: 149 conversions from 232 enrollments. The campaign learns from the same competitor and feature context.</p><span class="graph-arrow">→</span></div>
+        <div class="graph-layer"><div class="label">Shared pipeline view</div><h3>Prioritized exposure</h3><div class="value bad">$19.1M</div><p class="detail">Pipeline across 61 opportunities that combine a Zendesk evaluation with the Slack-integration request.</p></div>
+      </div>
+      <p class="lead">The product metric does not sit beside the campaign metric by coincidence - they share a feature, competitor, opportunity, and pipeline path.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="wrap">
+      <p class="eyebrow">Graph design · messy cases</p>
+      <h2>The graph earns trust when it makes the ambiguous cases <span class="accent">explicit.</span></h2>
+      <div class="grid two">
+        <div class="card"><div class="label">Many-to-many relationships</div><h3>One opportunity can involve several products, features, and campaigns.</h3><p class="detail">Keep each relationship as an edge and label the attribution rule instead of forcing one “primary” answer.</p></div>
+        <div class="card"><div class="label">Campaign attribution</div><h3>Conversion is a measured outcome, not proof of causation.</h3><p class="detail">Show enrollment, conversion, and the trigger source separately; compare signal-triggered and manual cohorts without overstating lift.</p></div>
+        <div class="card"><div class="label">Sparse data</div><h3>Not every graph slice supports a rate.</h3><p class="detail">Suppress views below five closed opportunities and surface density warnings when a team, segment, or territory is too granular.</p></div>
+        <div class="card"><div class="label">Uncertain signals and ownership</div><h3>Ambiguous or unverified nodes should not drive a recommendation.</h3><p class="detail">Preserve evidence provenance, drop unquotable extraction claims, and route cross-functional recommendations to the owning team.</p></div>
+      </div>
+      <p class="lead">This is what turns a useful visualization into an operating model: clear entities, declared relationships, measured outcomes, and visible guardrails.</p>
     </div>
   </section>
 

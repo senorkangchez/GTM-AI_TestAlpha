@@ -21,6 +21,9 @@ The deck opens by grounding the challenge: Sales hears feature requests, competi
 3. **Heatmap:** product × competitor win rates; grey out cells with fewer than five closed opportunities.
 4. **Waterfall:** baseline win rate → competitor exposure → feature-gap impact, using actual regenerated fixture values.
 5. **Context graph:** account → opportunity → feature → competitor → segment → team → campaign → play.
+6. **Three-layer graph:** golden data → department lenses → pipeline and learning outcomes.
+7. **Connected decision example:** feature demand, signal-triggered campaign conversion, and shared pipeline exposure.
+8. **Graph edge cases:** many-to-many relationships, attribution, sparse data, and evidence/ownership guardrails.
 
 ## Trust close
 
